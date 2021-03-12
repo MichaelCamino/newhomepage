@@ -305,19 +305,22 @@ body.demo::before {
     max-width: 21%;
 }
 
-.row > .column.centered {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 3em;
-    text-align: center;
-    padding: 2em;
-    font-family: 'Times New Roman', Times, serif;
-    border: 1px solid rgba(255, 255, 255, .8);
-    border-radius: .5em;
-    color: rgba(255, 255, 255, .8);
 }
 
+.column.centered {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 3em;
+        margin-bottom: 3em;
+        text-align: center;
+        padding: 2em;
+        font-family: 'Times New Roman', Times, serif;
+        border: 1px solid rgba(255, 255, 255, .8);
+        border-radius: .5em;
+        color: rgba(255, 255, 255, .8);
+    }
 }
+
 /*  FOR DEMO PURPOSES GRID SYSTEM */
 
 .demo .column {
