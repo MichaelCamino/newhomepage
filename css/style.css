@@ -100,26 +100,6 @@ p {
 
 /* LINKS */
 
-a img {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property: transform;
-    transition-property: transform;
-    transform: scale(.8);
-    padding: 1em;
-    opacity: .8;
-}
-
-a:hover img {
-    -webkit-transform: scale(0.7);
-  transform: scale(0.7);
-  opacity: .7;
-   }
 
 
 a {
@@ -382,6 +362,7 @@ body.demo::before {
     list-style: none;
     display: flex;
     justify-content: center;
+    font-family: 'Shippori Mincho B1', serif;
 }
 
 .site-nav a {
@@ -399,17 +380,19 @@ body.demo::before {
 .site-footer {
     font-size: 1.5em;
     padding-top: 0;
-    
     margin-top: 0;
-   
- 
-}
+   }
 
-.container .border {
+   .site-footer .container {
+       border-top: 1px solid rgba(255, 255, 255, .8);
+       max-width: 300px;
+   }
+
+/* .container .border {
     border-bottom: 1px solid rgba(255, 255, 255, .8);
     margin-left: 200px;
     margin-right: 200px;
-}
+} */
 
 
 /*  SECTIONS */
@@ -426,7 +409,7 @@ section {
     background-size: cover;
     background-repeat: no-repeat;
     border: 1px solid rgba(255, 255, 255, .8);
-    /* color: rgba(255, 255, 255, .8); */
+    color: rgba(255, 255, 255, .8);
     padding: 6em 4%;
     text-align: center;
     margin-left: auto;
@@ -437,9 +420,8 @@ section {
     margin: auto;
 }
 
-.hero h1, .hero p {
-    font-family: 'Times New Roman', Times, serif;
-    opacity: .8;
+.hero p {
+    font-weight: lighter;
 }
 
 .hero h1, .hero p {
@@ -447,7 +429,7 @@ section {
     margin-right: auto;
     max-width: 600px;
     color: rgba(255, 255, 255, .8);
-    font-family: 'Times New Roman', Times, serif ;
+    font-family: 'Shippori Mincho B1', serif;
 }
 
 .hero .button {
@@ -496,6 +478,37 @@ body {
 
 /*  CONTENT SECTION */
 
+.column.one-half h2 {
+    text-align: center;
+    font-size: 4em;
+    margin-bottom: auto;
+    font-family: 'Shippori Mincho B1', serif;
+
+    }
+
+    .column.one-half p {
+        text-align: center;
+        margin-top: auto;
+        line-height: normal;
+    }
+
+    .column.one-half.centered h2 {
+        font-size: 2em;
+        margin-bottom: .5em;
+    }
+
+    .column.one-half a {
+        color: rgba(255, 255, 255, .8);
+        transition: 250ms ease;
+        cursor: pointer ;
+    }
+
+    .column.one-half a:hover {
+        text-decoration: none;
+        font-size: smaller;
+        color: rgba(255, 255, 255, .5);
+        transition: 250ms ease;
+    }
 
 /* TOGGLE NAV */
 
