@@ -35,7 +35,7 @@ body {
     font-family: Helvetica, Arial, sans-serif;
     line-height: 1.5;
     color: rgba(255, 255, 255, .8);
-    background-color: rgba(0, 0, 0, .9);
+    background-color: rgba(25, 25, 25, 1)
 }
 
 /*  HEADINGS */
@@ -78,7 +78,7 @@ h6 {
     line-height: 1.5;
 }
 
-.hero h1 {
+.site-main .hero h1 {
     letter-spacing: .2em;
     padding-left: .1em;
 }
@@ -95,7 +95,7 @@ p {
     text-align: center;
     /* padding-bottom: 1em; */
     /* background-color: red; */
-    font-size: 1.5em;
+    /* font-size: 1.5em; */
     
 }
 
@@ -414,16 +414,16 @@ section {
 /*  HERO */
 
 .hero  {
-    background-image: url(https://images.pexels.com/photos/3648850/pexels-photo-3648850.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
-    background-position: bottom;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: 1px solid rgba(255, 255, 255, .8);
+    /* border: 1px solid rgba(255, 255, 255, .8); */
+    border-radius: .5em;
     color: rgba(255, 255, 255, .8);
     padding: 6em 4%;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    background-color: rgba(255, 255, 255, .8);
+    /* background-image: radial-gradient(farthest-corner at 50% 1%, rgba(255, 255, 255, .8), rgba(25, 25, 25, 1) 70%); */
+    background-image: linear-gradient( to bottom right, rgba(255, 255, 255, 1), rgb(80, 80, 80) );
 }
 
 .container .hero {
@@ -431,22 +431,26 @@ section {
 }
 
 .hero h1 {
-    font-family: 'Shippori Mincho B1', serif;
+    filter: drop-shadow(2px 2px rgb(92, 92, 92));
+    font-family: 'EB Garamond', serif;
     font-weight: lighter;
+    color: rgba(255, 255, 255, .8);
 }
 
 .hero p {
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: lighter;
-    opacity: .8;
+    opacity: .9;
+    font-size: 110%;
+    margin-top: 1em;
+    color: rgba(25, 25, 25, 1);
 }
 
 .hero h1, .hero p {
     margin-left: auto;
     margin-right: auto;
     max-width: 600px;
-    color: rgba(255, 255, 255, .8);
+    /* color: rgba(255, 255, 255, .8); */
 }
 
 .hero .button {
@@ -455,19 +459,19 @@ section {
     border: 1px solid rgba(255, 255, 255, .8);
     font-size: smaller;
     border-radius: .5em;
-    font-family: 'Roboto', sans-serif;
-    transition: 200ms ease;
+    font-family: 'Open Sans', sans-serif;
+    transition: 250ms ease;
 }
 
 .hero .button:hover {
-    background-color: rgba(255, 255, 255, .8);
+    background-color: transparent;
     color: rgba(0, 0, 0, .8);
     border: 1px solid rgba(255, 255, 255, .8);
     text-decoration: none;
     transform: scale(.95);
-    transition: 200ms ease;
+    transition: 250ms ease;
     border-radius: .7em;
-    font-family: 'Roboto', sans-serif;
+    ffont-family: 'Open Sans', sans-serif;
 }
 
 .hero .button.alternate {
@@ -498,7 +502,9 @@ section {
     color: rgba(255, 255, 255, .8);
 }
 
-
+.sub-page .hero h1 {
+    letter-spacing: .05em;
+}
 
 /*  CONTENT SECTION */
 
@@ -506,7 +512,7 @@ section {
     text-align: center;
     font-size: 4em;
     margin-bottom: auto;
-    font-family: 'Shippori Mincho B1', serif;
+    font-family: 'EB Garamond', serif;
     font-weight: lighter;
     transition: 250ms ease;
     margin-left: 1.5em;
@@ -514,7 +520,7 @@ section {
 }
 
 .column.one-half h2:hover {
-    transform: scale(.9);
+    transform: scalex(.95);
     transition: 250ms ease;
 }
 
@@ -554,11 +560,11 @@ section {
         list-style: none;
         line-height: 2em;
         font-size: 110%;
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Open Sans', sans-serif;
     }
 
 .column.one-third li:hover {
-        transform: scale(1.1);
+        transform: translateX(-10px);
         transition: 200ms ease;
         list-style-type: disc;
     }
@@ -568,7 +574,7 @@ section {
     }
 
 .column.one-third h4 {
-        font-family: 'Shippori Mincho B1', serif;
+        font-family: 'EB Garamond', serif;
         font-weight: lighter;
         text-align: justify;
     }
@@ -578,14 +584,23 @@ section {
     }
 
 .column.one-third p {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 110%;
     margin-top: 1em;
     margin-left: 2em;
 }
 
-    .column.one-half.centered {
-        font-family: 'Shippori Mincho B1', serif;
+    .column.one-half.centered  {
+        background: rgba(255, 255, 255, .8);
+        color: rgba(25, 25, 25, 1);
+        padding: 0;
+        max-width: 300px;
+        margin-top: 5em;
+    }
+
+    .column.one-half.centered h3 {
+        font-family: 'EB Garamond', serif;
+        font-weight: lighter;
     }
 
 /* TOGGLE NAV */

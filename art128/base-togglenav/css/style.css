@@ -284,6 +284,7 @@ body.demo::before {
 
 .site-header {
     padding: 1em 0;
+    background-color: transparent;
 }
 
 /*  ON LARGER SCREENS PLACE LOGO LEFT AND NAV RIGHT */

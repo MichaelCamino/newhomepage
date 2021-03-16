@@ -344,6 +344,7 @@ body.demo::before {
 .site-nav a {
     padding: 1em;
     display: block;
+    color: rgba(255, 255, 255, .8);
 }
 
 
@@ -353,9 +354,9 @@ body.demo::before {
 
 /*  SITE FOOTER */
 
-/* .site-footer {
+.site-footer {
     background-color: rgba(0, 0, 255, .2);
-} */
+}
 
 /*  SECTIONS */
 
