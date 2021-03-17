@@ -299,7 +299,7 @@ body.demo::before {
         border-radius: .5em;
         color: rgba(255, 255, 255, .8);
     }
-}
+
 
 /*  FOR DEMO PURPOSES GRID SYSTEM */
 
@@ -422,9 +422,7 @@ section {
 }
   
 .hero h1 {
- 
     animation: spacing ease-in-out 1s;
-   
 }
 
 @keyframes fadeIn {
@@ -500,7 +498,7 @@ section {
     transform: scale(.95);
     transition: 250ms ease;
     border-radius: .7em;
-    ffont-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .hero .button.alternate {
