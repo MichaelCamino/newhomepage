@@ -79,8 +79,7 @@ h6 {
 }
 
 .site-main .hero h1 {
-    letter-spacing: .1em;
-    padding-left: .1em;
+    letter-spacing: .05em;
 }
 
 /* PARAGRAPHS */
@@ -415,8 +414,8 @@ section {
 
 @keyframes spacing {
    
-    /* from {letter-spacing: .2em;}
-    to {letter-spacing: .1em;} */
+    from {letter-spacing: .1em;}
+    to {letter-spacing: .05em;}
     from {opacity: 0;}
     to {opacity: 1;}
     from {transform: translateY(-.3em);}
@@ -479,7 +478,7 @@ section {
 .hero h1, .hero p {
     margin-left: auto;
     margin-right: auto;
-    max-width: 600px;
+    max-width: 500px;
     /* color: rgba(255, 255, 255, .8); */
 }
 
@@ -633,6 +632,41 @@ section {
         font-weight: lighter;
     }
 
+    .column.one-third.centered {
+        padding: 0;
+        border: none;
+        
+        margin: auto;
+        color: rgba(255, 255, 255, .8);
+    }
+
+    .column.one-third.centered h3 {
+        font-family: 'EB Garamond', serif;
+        font-weight: lighter;
+    }
+
+    .site-main .column.column.one-fourth  {
+        text-align: center;
+        margin-bottom: auto;
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+    }
+
+    .column.one-fourth h4 {
+        font-family: 'EB Garamond', serif;
+        font-weight: lighter;
+        font-size: 3em;
+        color: rgba(255, 255, 255, .8);
+        margin-bottom: auto;
+        padding-bottom: 0em;
+        line-height: 4vh;
+    }
+    .column.one-fourth p {
+        text-align: center;
+        margin-top: auto;
+        line-height: 1.5vh;
+        font-size: 90%;
+        }
 /* TOGGLE NAV */
 
 @media (max-width: 767px) {
