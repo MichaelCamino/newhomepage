@@ -79,7 +79,7 @@ h6 {
 }
 
 .site-main .hero h1 {
-    letter-spacing: .2em;
+    letter-spacing: .1em;
     padding-left: .1em;
 }
 
@@ -415,23 +415,28 @@ section {
 
 @keyframes spacing {
    
-    from {transform: scale(.6);}
-    to {transform: scale(1);}
+    /* from {letter-spacing: .2em;}
+    to {letter-spacing: .1em;} */
+    from {opacity: 0;}
+    to {opacity: 1;}
+    from {transform: translateY(-.3em);}
 }
   
-/* .site-main .hero h1 {
+.hero h1 {
  
     animation: spacing ease-in-out 1s;
    
-} */
+}
 
 @keyframes fadeIn {
     from {opacity: 0;}
-    to {opacity: 1;}
+    to {opacity: .8;}
 }
 
 .hero p {
-    animation: fadeIn ease 3s;
+    animation: fadeIn ease 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
     }
 
 
@@ -465,7 +470,7 @@ section {
 .hero p {
     font-family: 'Open Sans', sans-serif;
     font-weight: lighter;
-    opacity: .9;
+    opacity: 0;
     font-size: 110%;
     margin-top: 1em;
     color: rgba(25, 25, 25, 1);
