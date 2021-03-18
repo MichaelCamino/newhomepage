@@ -78,10 +78,6 @@ h6 {
     line-height: 1.5;
 }
 
-.site-main .hero h1 {
-    letter-spacing: .05em;
-}
-
 /* PARAGRAPHS */
 p {
     margin: .5em 0;
@@ -415,6 +411,11 @@ section {
   
 .hero h1 {
     animation: spacing ease-in-out 1s;
+    filter: drop-shadow(2px 2px rgb(92, 92, 92));
+    font-family: 'EB Garamond', serif;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, .8);
+    letter-spacing: .05em;
 }
 
 @keyframes fadeIn {
@@ -426,6 +427,13 @@ section {
     animation: fadeIn ease 2s;
     animation-delay: 1s;
     animation-fill-mode: forwards;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    opacity: 0;
+    font-size: 110%;
+    margin-top: 1em;
+    color: rgba(25, 25, 25, 1);
+    line-height: 1vh;
     }
 
 
@@ -444,29 +452,10 @@ section {
     }
 
 
-
-.hero h1 {
-    filter: drop-shadow(2px 2px rgb(92, 92, 92));
-    font-family: 'EB Garamond', serif;
-    font-weight: lighter;
-    color: rgba(255, 255, 255, .8);
-}
-
-
-
-.hero p {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: lighter;
-    opacity: 0;
-    font-size: 110%;
-    margin-top: 1em;
-    color: rgba(25, 25, 25, 1);
-}
-
 .hero h1, .hero p {
     margin-left: auto;
     margin-right: auto;
-    max-width: 500px;
+    max-width: 600px;
 }
 
 .hero .button {
@@ -518,11 +507,8 @@ section {
     color: rgba(255, 255, 255, .8);
 }
 
-.sub-page .hero h1 {
-    letter-spacing: .05em;
-}
-
 /*  CONTENT SECTION */
+
 
 .column.one-half h2 {
     text-align: center;
@@ -543,7 +529,7 @@ section {
 .column.one-half p {
         text-align: center;
         margin-top: auto;
-        line-height: normal;
+        line-height: 1vh;
     }
 
 .column.one-half.centered h2 {
@@ -651,7 +637,7 @@ section {
     .column.one-fourth p {
         text-align: center;
         margin-top: auto;
-        line-height: 1.5vh;
+        line-height: 1vh;
         font-size: 90%;
         }
 /* TOGGLE NAV */
@@ -716,6 +702,6 @@ section {
         }
 
         .column.one-fourth p {
-            line-height: 4vh;
+            line-height: 5vh;
         }
 }
