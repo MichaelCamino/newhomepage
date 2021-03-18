@@ -416,6 +416,8 @@ section {
     font-weight: lighter;
     color: rgba(255, 255, 255, .8);
     letter-spacing: .05em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @keyframes fadeIn {
@@ -433,7 +435,7 @@ section {
     font-size: 110%;
     margin-top: 1em;
     color: rgba(25, 25, 25, 1);
-    line-height: 1vh;
+    line-height: 1.5vh;
     }
 
 
