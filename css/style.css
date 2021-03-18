@@ -92,10 +92,7 @@ p {
 
 .hero p {
     text-align: center;
-    /* padding-bottom: 1em; */
-    /* background-color: red; */
-    /* font-size: 1.5em; */
-    
+   
 }
 
 /* LINKS */
@@ -103,14 +100,9 @@ p {
 
 
 a {
-    color: rgba(255, 0, 221, 1);
     text-decoration: none;
 }
 
-a:hover {
-    color:rgba(255, 0, 221, .6);
-    text-decoration: underline;
-}
 /* BLOCK QUOTES */
 blockquote {
     font-size: 1.142em;
@@ -451,9 +443,7 @@ section {
     background-image: linear-gradient( to bottom right, rgba(255, 255, 255, 1), rgb(80, 80, 80));
     }
 
-.container .hero {
-    margin: auto;
-}
+
 
 .hero h1 {
     filter: drop-shadow(2px 2px rgb(92, 92, 92));
@@ -477,7 +467,6 @@ section {
     margin-left: auto;
     margin-right: auto;
     max-width: 500px;
-    /* color: rgba(255, 255, 255, .8); */
 }
 
 .hero .button {
@@ -724,5 +713,9 @@ section {
 
         .toggle-nav[data-navstate="open"] .site-nav .menu-button.navicon::after {
             content: "\2715";
+        }
+
+        .column.one-fourth p {
+            line-height: 4vh;
         }
 }
