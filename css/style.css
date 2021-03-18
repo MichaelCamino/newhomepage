@@ -416,8 +416,6 @@ section {
     font-weight: lighter;
     color: rgba(255, 255, 255, .8);
     letter-spacing: .05em;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 @keyframes fadeIn {
@@ -436,6 +434,8 @@ section {
     margin-top: 1em;
     color: rgba(25, 25, 25, 1);
     line-height: 1.5vh;
+    margin-left: auto;
+    margin-right: auto;
     }
 
 
@@ -446,19 +446,19 @@ section {
     color: rgba(255, 255, 255, .8);
     padding: 6em 4%;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
     background-color: rgba(255, 255, 255, .8);
     /* background-image: radial-gradient(farthest-corner at 50% 1%, rgba(255, 255, 255, .8), rgba(25, 25, 25, 1) 70%); */
     background-image: linear-gradient( to bottom right, rgba(255, 255, 255, 1), rgb(80, 80, 80));
     }
 
 
-.hero h1, .hero p {
+/* .hero h1, .hero p {
     margin-left: auto;
     margin-right: auto;
     max-width: 600px;
-}
+} */
 
 .hero .button {
     background:rgba(25, 25, 25, 1);
