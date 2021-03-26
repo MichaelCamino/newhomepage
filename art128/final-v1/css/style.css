@@ -32,15 +32,11 @@
 
 /*  TYPOGRAPHY */
 body {
-    background-image: url(https://lh3.googleusercontent.com/WvGPxzBXOTxD3OmbQ6x6IP4Q_uQzgRrz0LagxaqQc4Dnbb7qhcQO28R0gXykWoHSZ_8mJ6BpI1SJQRK6AB4JL3NWCxKy6CVwMYz7UnPabk1rNBpUs6KCYfiUwlAEIfRlEh5MSwb5fj-5RsaVIon8aApmgVes_JoqgqGDqz2TBewAjh_o8WuJIiwl5PHg_EPeOpH70WRDj8CvmQNEOjv4K5_yWFyAHsZP7nXigyUzRiCg_TWN5lT-Qs5PL22S4R_wLmnhL5ZCbGRJLAsySvo01qYddyb_nbHaO7nuAsX-xOmPGuRZOP-qB5YikFxWBmGrd9udBYhig6hmS6VoZwtLDXuEVb1F3whfcuZCQGg-IZYSlLKLi-9Jn9DFBOYx94HhxLH2NlsLZp2csz9j17eSzKOCwp38zRp2P4rwn0dsE4RwemCco3fST_Llgie8lerWrvZHIcd_jXiwTo5pDoWJxUzqB3AlV-7MrOSi_e22cyRxqk0z6QclcmnzIYGaGjdUx5-YJ3qxoCP7-iATdmARRywR1oAm9Vdjos8tNrNBSg7m7NxNS56OghaOfer2OjENr5vo6BtMJ7D8FxPqf5Ic9Jlin8DOz6wYyKN25SIo1-X1DQoLWu1KpXnX2h4mfFd2dFN0Wt0czLt8zwYrhuCw009H2CzwPUz6q4o0RGc8h15hDLjlgsrbH3LrbNFC-92a8EgSj75U5WjztLZa9IgZX_Uy=w591-h1231-no?authuser=0);
-    height: 100px;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
     font-size: 100%;  /* 16px */
     font-family: Helvetica, Arial, sans-serif;
     line-height: 1.5;
     color: rgba(255, 255, 255, .8);
+    background-color: rgba(0, 0, 0, .95);
 }
 
 /*  HEADINGS */
@@ -336,6 +332,7 @@ body.demo::before {
     font-weight: lighter;
 }
 
+
 /*  SITE NAV */
 
 .site-nav .menu-button {
@@ -376,19 +373,25 @@ section {
 /*  HERO */
 
 .hero  {
+    background-image: url(https://lh3.googleusercontent.com/tEulUOmUopagskDh_OerOg-H4HHcDd238d1dPhBD_6n9QEkL27CjRdqnmJtC-AsufT0XeqeStN_9yKU6eNeLG7EtIpUwP2MMNtXAMe7Jr4XC9dz3BhkUEwZJbuWvU93BjQGIk7gUH1k-Lax0jPzZ8e3maTYx6S7zcWvX7SajaxNfTHl9BH7dDSbtz77H8oowxYh25PKfOvjkk3m3M6NMIBj5fUNhI2xr6XqgdmxOPiVtfHISmcTCl68N3HNy7PRpBA3N-tCPbT_oO2a18bsdDHguYT8Pfc53Jxh8ubq7bNTCAKKvW6U9gQH5FBJ199OEReU5_vPXIAWtDZwrt2QF_ih8GY9j-Iw3KnbubpnZT5komH-dk-5uGblweEDmVAzYdOuto2CP-D1lh-eiGQDR2W1-21F205Pks72gfTgORPVXN-m0BxkHoEKu68B2EIAsphlslgr1JBsz2-8y8IX8t8SuPoOKdBVaGrcNc_JwUlCUYCBO-w5M1OZGNT6E7qFKA9hqGOoWdn3rCub2JI5PWAQUGg4kcvZnkSTh0hn1qa4c4gQ7PwdrwNfkefQWwIPaBL8y1oVsY1Xr9h9Fu_zWP9rGlaYcUWjbVdIuysOhcg4Qm0MnVy3kjeFY33bDeyhNHPwJSD6iU4y3SIn-5ABGS47LZ-eOwCeV47skDXJ8CwoKgQLJFsnd1LN_qBwJxlTPvUbvW_BGCBnbH0Zov0vveT3M=w1672-h941-no?authuser=0);
+    background-position: top;
     background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
     /* border-top: 1px solid rgba(255, 255, 255, .8);
     border-bottom: 1px solid rgba(255, 255, 255, .8); */
     padding: 6em 4%;
     text-align: center;
-    margin-bottom: 15em;
-    padding-top: 10em;
+    margin-bottom: 1em;
+    padding: 10em;
+    margin-top: 1em;
 }
 
 .hero h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5em;
     font-weight: lighter;
+    line-height: 1.5vh;
 }
 
 .hero h1, .hero p {
@@ -639,6 +642,7 @@ form input[type=submit]:hover {
 .site-header.sticky {
     position: fixed;
     width: 100%;
+    background-color: transparent;
 }
 
 .site-header.sticky + main {
