@@ -176,7 +176,7 @@ body {margin: 0;}
     max-width: 1000px;
     margin: 0 auto;
     padding: 0 4%;
-    text-align: justify;
+    /* text-align: justify; */
 }
 
 /*  MEDIA QUERIES */
@@ -353,10 +353,6 @@ body.demo::before {
 
 
 /*  SITE FOOTER */
-
-.site-footer {
-    background-color: rgba(0, 0, 255, .2);
-}
 
 /*  SECTIONS */
 

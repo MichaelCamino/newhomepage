@@ -176,7 +176,7 @@ body {margin: 0;}
     max-width: 1000px;
     margin: 0 auto;
     padding: 0 4%;
-    text-align: justify;
+    /* text-align: justify; */
 }
 
 /*  MEDIA QUERIES */

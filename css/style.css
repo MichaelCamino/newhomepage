@@ -82,7 +82,7 @@ h6 {
 p {
     margin: .5em 0;
     max-width: 40em;
-    text-align: justify;
+    /* text-align: justify; */
     
 }
 
@@ -166,7 +166,7 @@ body {margin: 0;}
     max-width: 1000px;
     margin: 0 auto;
     padding: 0 4%;
-    text-align: justify;
+    /* text-align: justify; */
 }
 
 /*  MEDIA QUERIES */
@@ -580,7 +580,7 @@ section {
 .column.one-third h4 {
         font-family: 'EB Garamond', serif;
         font-weight: lighter;
-        text-align: justify;
+        /* text-align: justify; */
     }
 
 .column.one-third {
