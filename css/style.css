@@ -551,12 +551,12 @@ section {
     }
 
 .column.one-third a {
-        color: rgba(255, 255, 255, .5);
+        color: rgba(255, 255, 255, .8);
         transition: 250ms ease;
     }
 
 .column.one-third a:hover {
-        color: rgba(255, 255, 255, .8);
+        color: rgba(255, 255, 255, 1);
         transition: 250ms ease;
         text-decoration: none;
     }
