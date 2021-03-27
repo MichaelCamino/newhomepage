@@ -330,6 +330,7 @@ body.demo::before {
     color: gray;
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
+    letter-spacing: 5px;
 }
 
 
