@@ -457,7 +457,7 @@ section {
     border: 3px solid rgba(169, 83, 168, 1);
     transform: scale(.8);
     padding: 1em;
-    margin-left: 3em;
+    /* margin-left: 3em; */
     }
 
    .next-performance {
@@ -469,7 +469,7 @@ section {
 /*  BRANCH STYLING */
 
     .branch-one {
-        transform: translate(-44em, 12em);
+        transform: translate(-48em, 12em);
     }
 
     .branch-two {
