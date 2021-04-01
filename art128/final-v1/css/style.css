@@ -180,6 +180,7 @@ body {margin: 0;}
 
 @media (min-width: 768px) {
     /*  TABLET SIZED STYLING GOES HERE */
+    
 }
 
 @media (min-width: 1050px) {
@@ -194,6 +195,9 @@ body {margin: 0;}
     }
     .container {
         max-width: 1200px;
+    }
+    .branch-one {
+        position: sticky;
     }
 }
 
@@ -460,9 +464,19 @@ section {
     /* margin-left: 3em; */
     }
 
-   .next-performance {
-       background: red;
+   .next-show {
+       text-align: right;
    }
+
+   h2.merch {
+       text-align: center;
+       padding-bottom: 2em;
+   }
+
+   img.bc-logo {
+       padding-top: 1em;
+   }
+
     /* PAGE ICON STYING */
 
 
