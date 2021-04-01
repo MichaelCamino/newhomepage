@@ -309,13 +309,15 @@ body.demo::before {
 .site-header a,
 .site-footer a {
     color: rgba(255, 255, 255, .8);
-    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    transition: 300ms ease;
 }
 
 .site-header a:hover, 
 .site-footer a:hover {
     color: rgba(255, 255, 255, .5);
     text-decoration: none;
+    transform: translateY(-.1em)
 }
 
 
@@ -361,22 +363,29 @@ body.demo::before {
 
 /*  SITE FOOTER */
 
-.site-footer {
-    /* background-color: rgba(0, 0, 255, .2); */
-    margin-top: 0;
-    margin-bottom: 10em;
-}
-
-.hero-bottom {
-    padding: 0;
+.hero-bottom  {
     margin-bottom: 0;
 }
+
+
+.site-footer a {
+    margin-top: 0em;
+    margin-bottom: 10em;
+    padding: 0em .2em;
+    font-size: 3em;
+}
+
+.site-footer {
+    transform: translate(0em, -5em);
+}
+
 
 /*  SECTIONS */
 
 section {
     padding: 3em 0;
 }
+
 
 /*  HERO */
 
@@ -389,10 +398,11 @@ section {
 }
 
 .hero h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5em;
-    font-weight: lighter;
-    line-height: 1.5vh;
+    font-family: novecento-sans-wide,sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 2em;
+    line-height: .8em;
 }
 
 .hero h1, .hero p {
@@ -440,6 +450,51 @@ section {
     border: 1px solid rgba(0, 0, 0, .8)
 }
 
+/* PHOTO STYING */
+
+.group-photo {
+    border-radius: 50%;
+    border: 3px solid rgba(169, 83, 168, 1);
+    transform: scale(.8);
+    padding: 1em;
+    margin-left: 3em;
+    }
+
+   .next-performance {
+       background: red;
+   }
+    /* PAGE ICON STYING */
+
+
+/*  BRANCH STYLING */
+
+    .branch-one {
+        transform: translate(-44em, 12em);
+    }
+
+    .branch-two {
+        transform: translate(18em, -8em);
+    }
+
+    .branch-eight {
+       transform: translate(-28.5em, 26em);
+    }
+
+    h1, h2, h3 {
+        font-family: novecento-sans-wide,sans-serif;
+        font-weight: 200;
+        font-style: normal;
+    }
+
+    h2.story {
+       
+        transform: translate(0, 3em);
+    }
+
+    p.story {
+     
+        margin-top: 7em;
+    }
 /* .row h2, p {
     color: rgba(255, 255, 255, .9);
 } */
