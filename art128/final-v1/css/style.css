@@ -333,10 +333,6 @@ body.demo::before {
     margin: 0;
     text-align: center;
     padding-top: .55em;
-    color: gray;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: lighter;
-    letter-spacing: 5px;
 }
 
 
@@ -387,7 +383,7 @@ body.demo::before {
 /*  SECTIONS */
 
 section {
-    padding: 3em 0;
+    padding: 5em 0;
 }
 
 
@@ -477,6 +473,68 @@ section {
        padding-top: 1em;
    }
 
+   h1.date {
+    position: absolute;
+    text-align: center;
+    font-size: 5em;
+    margin-left: 1.25em;
+    margin-top: .7em;
+}
+
+h3.venue {
+    position: absolute;
+    text-align: center;
+    font-size: 2em;
+    margin-top: -2.8em;
+    /* margin-left: .5em; */
+}
+
+.rectangle {
+    height: 12em;
+    width: 14em;
+    background-color: rgba(169, 83, 168, 1);
+    border-radius: 10%;
+    margin-left: 4.5em;
+    margin-top: 1.6em;
+}
+
+iframe {
+    position: absolute;
+}
+
+.video-background {
+    height: 315px;
+    width: 560px;
+    outline: 2px solid rgba(169, 83, 168, 1);
+    margin-left: 60px;
+    margin-top: 75px;
+}
+
+.musings {
+    position: absolute;
+    margin-left: 3em;
+    margin-bottom: 5em;
+    height: 315px;
+    width: 560px;
+    background-color: rgba(255, 255, 255, .8);
+}
+
+.musings-header {
+    position: relative;
+    text-align: right;
+    margin-bottom: .15em;
+    margin-right: .8em;
+}
+
+.musings-background {
+    height: 315px;
+    width: 560px;
+    border-top: 2px solid rgba(169, 83, 168, 1);
+    border-left: 2px solid rgba(169, 83, 168, 1);
+    transform: translate(0, -3em);
+}
+
+
     /* PAGE ICON STYING */
 
 
@@ -513,18 +571,6 @@ section {
     h2.next {
         text-align: right;
         margin-top: 1em;
-    }
-
-    h1.date {
-        text-align: center;
-        font-size: 5em;
-        margin-bottom: 0;
-        padding: 0;
-    }
-
-    h3.venue {
-        text-align: center;
-margin-top: 0;
     }
 
 /* TOGGLE NAV */
