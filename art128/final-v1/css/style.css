@@ -332,7 +332,7 @@ body.demo::before {
     font-size: 1.5em;
     margin: 0;
     text-align: center;
-    padding-top: .55em;
+    transform: scale(.5);
 }
 
 
