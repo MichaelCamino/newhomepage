@@ -528,17 +528,17 @@ h3.venue {
     .rectangle {
         border: none;
     }
-    h1.date {
-       text-align: center;
-       margin-left: .5em;
-       margin-top: 0;
-       outline: 2px solid rgba(169, 83, 168, 1);
-    }
+
     .next-show {
         text-align: center;
         /* border-bottom: 2px solid rgba(169, 83, 168, 1); */
-        padding-bottom: 1em;
         margin-bottom: 0;
+    }
+
+    h1.date {
+       text-align: center;
+       font-size: 5em;
+       margin-top: 0;
     }
 }
 
