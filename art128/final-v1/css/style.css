@@ -595,7 +595,7 @@ h3.venue {
         left: 0;
         width: 45%;
         height: 50%;
-        z-index: -1;
+        /* z-index: -1; */
     }
 
     @media (max-width:767px) {
