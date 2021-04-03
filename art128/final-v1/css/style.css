@@ -581,9 +581,9 @@ h3.venue {
 
 /*  BRANCH STYLING */
 
-    .branch {
-        /* border: 1px solid red; */
-    }
+    /* .branch {
+       
+    } */
 
     .branch-one {
         background-image: url(../img/branch-one.png);
@@ -657,8 +657,7 @@ h3.venue {
         z-index: -1;
     }
 
-    .branch-eight {
-    }
+
 
     h1, h2, h3 {
         font-family: novecento-sans-wide,sans-serif;
@@ -666,11 +665,7 @@ h3.venue {
         font-style: normal;
     }
 
-    h2.story {
-    }
-
-    p.story {
-    }
+   
 
     h2.next {
         text-align: right;
