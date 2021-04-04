@@ -523,6 +523,79 @@ section {
 
 /*  CONTENT SECTION */
 
+@keyframes latefade {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+h2.one {
+    animation: latefade ease-in-out .5s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+h2.two {
+    animation: latefade ease-in-out .5s;
+    animation-delay: 1.2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+h2.three {
+    animation: latefade ease-in-out .5s;
+    animation-delay: 1.4s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+h2.four {
+    animation: latefade ease-in-out .5s;
+    animation-delay: 1.6s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+p.one {
+    animation: latefade ease-in-out .5s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+p.two {
+    animation: latefade ease-in-out .5s;
+    animation-delay: 1.2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+p.three {
+    animation: latefade ease-in-out .5s;
+    animation-delay: 1.4s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+p.four {
+    animation: latefade ease-in-out .5s;
+    animation-delay: 1.6s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fadeup {
+    from {transform: translateY(1.2em);}
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.fade-up {
+    animation: fadeup ease-in-out .5s;
+    animation-delay: 1.8s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
 
 .column.one-half h2 {
     text-align: center;
