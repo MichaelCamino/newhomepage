@@ -402,30 +402,37 @@ section {
 
 @keyframes spacing {
    
-    from {letter-spacing: .1em;}
-    to {letter-spacing: .05em;}
+    /* from {letter-spacing: .1em;}
+    to {letter-spacing: .05em;} */
     from {opacity: 0;}
     to {opacity: 1;}
-    from {transform: translateY(-.3em);}
+    from {transform: translateY(.5em);}
 }
   
 .hero h1 {
-    animation: spacing ease-in-out 1s;
+    animation: spacing ease-in-out .5s;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
     filter: drop-shadow(2px 2px rgb(92, 92, 92));
-    font-family: 'EB Garamond', serif;
-    font-weight: lighter;
+    font-family: coranto-2,serif;
+    font-weight: 700;
+    font-style: normal;
+    /* font-weight: lighter; */
     color: rgba(255, 255, 255, .8);
     letter-spacing: .05em;
+
 }
 
 @keyframes fadeIn {
     from {opacity: 0;}
     to {opacity: .8;}
+    from {transform: translateY(1.2em);}
 }
 
 .hero p {
-    animation: fadeIn ease 2s;
-    animation-delay: 1s;
+    animation: fadeIn  .6s;
+    animation-delay: .7s;
     animation-fill-mode: forwards;
     font-family: 'Open Sans', sans-serif;
     font-weight: lighter;
@@ -438,9 +445,14 @@ section {
     margin-right: auto;
     }
 
-
+@keyframes lefttoright {
+    from {transform: translateX(-50em);}
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
     
 .hero  {
+    animation: lefttoright ease-out .6s;
     /* border: 1px solid rgba(255, 255, 255, .8); */
     border-radius: .5em;
     color: rgba(255, 255, 255, .8);
@@ -448,7 +460,7 @@ section {
     text-align: center;
     /* margin-left: auto;
     margin-right: auto; */
-    background-color: rgba(255, 255, 255, .8);
+    /* background-color: rgba(255, 255, 255, .8); */
     /* background-image: radial-gradient(farthest-corner at 50% 1%, rgba(255, 255, 255, .8), rgba(25, 25, 25, 1) 70%); */
     background-image: linear-gradient( to bottom right, rgba(255, 255, 255, 1), rgb(80, 80, 80));
     }
@@ -516,8 +528,9 @@ section {
     text-align: center;
     font-size: 4em;
     margin-bottom: auto;
-    font-family: 'EB Garamond', serif;
-    font-weight: lighter;
+    font-family: coranto-2,serif;
+    font-weight: 700;
+    font-style: normal;
     transition: 250ms ease;
     margin-left: 1.5em;
     margin-right: 1.5em;
@@ -579,8 +592,9 @@ section {
     }
 
 .column.one-third h4 {
-        font-family: 'EB Garamond', serif;
-        font-weight: lighter;
+        font-family: coranto-2,serif;
+        font-weight: 500;
+        font-style: normal;
         text-decoration: underline;
     }
 
@@ -604,7 +618,9 @@ section {
     }
 
     .column.one-half.centered h3 {
-        font-family: 'EB Garamond', serif;
+        font-family: coranto-2,serif;
+        font-weight: 700;
+        font-style: normal;
         font-weight: lighter;
     }
 
@@ -617,7 +633,9 @@ section {
     }
 
     .column.one-third.centered h3 {
-        font-family: 'EB Garamond', serif;
+        font-family: coranto-2,serif;
+        font-weight: 700;
+        font-style: normal;
         font-weight: lighter;
     }
 
@@ -629,8 +647,9 @@ section {
     }
 
     .column.one-fourth h4 {
-        font-family: 'EB Garamond', serif;
-        font-weight: lighter;
+        font-family: coranto-2,serif;
+        font-weight: 700;
+        font-style: normal;
         font-size: 3em;
         color: rgba(255, 255, 255, .8);
         margin-bottom: auto;
