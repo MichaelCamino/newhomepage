@@ -411,7 +411,7 @@ section {
   
 .hero h1 {
     animation: spacing ease-in-out .5s;
-    animation-delay: .5s;
+    /* animation-delay: .2s; */
     animation-fill-mode: forwards;
     opacity: 0;
     filter: drop-shadow(2px 2px rgb(92, 92, 92));
@@ -432,7 +432,7 @@ section {
 
 .hero p {
     animation: fadeIn  .6s;
-    animation-delay: .7s;
+    animation-delay: .2s;
     animation-fill-mode: forwards;
     font-family: 'Open Sans', sans-serif;
     font-weight: lighter;
@@ -530,76 +530,76 @@ section {
 
 h3.zero {
     animation: latefade ease-in-out .5s;
-    animation-delay: .9s;
+    animation-delay: .4s;
     animation-fill-mode: forwards;
     opacity: 0;
 }
 
 h2.one {
     animation: latefade ease-in-out .5s;
-    animation-delay: 1s;
+    animation-delay: .5s;
     animation-fill-mode: forwards;
     opacity: 0;
 }
 
 h2.two {
     animation: latefade ease-in-out .5s;
-    animation-delay: 1.1s;
+    animation-delay: .6s;
     animation-fill-mode: forwards;
     opacity: 0;
 }
 
 h2.three {
     animation: latefade ease-in-out .5s;
-    animation-delay: 1.2s;
+    animation-delay: .7s;
     animation-fill-mode: forwards;
     opacity: 0;
 }
 
 h2.four {
     animation: latefade ease-in-out .5s;
-    animation-delay: 1.3s;
+    animation-delay: .8s;
     animation-fill-mode: forwards;
     opacity: 0;
 }
 
 p.one {
     animation: latefade ease-in-out .5s;
-    animation-delay: 1s;
+    animation-delay: .5s;
     animation-fill-mode: forwards;
     opacity: 0;
 }
 
 p.two {
     animation: latefade ease-in-out .5s;
-    animation-delay: 1.1s;
+    animation-delay: .6s;
     animation-fill-mode: forwards;
     opacity: 0;
 }
 
 p.three {
     animation: latefade ease-in-out .5s;
-    animation-delay: 1.2s;
+    animation-delay: .7s;
     animation-fill-mode: forwards;
     opacity: 0;
 }
 
 p.four {
     animation: latefade ease-in-out .5s;
-    animation-delay: 1.3s;
+    animation-delay: .8s;
     animation-fill-mode: forwards;
     opacity: 0;
 }
 
 @keyframes fadeup {
-    from {transform: translateY(.8em);}
+    from {transform: translateY(.5em);}
     from {opacity: 0;}
     to {opacity: 1;}
 }
 
 .fade-up {
     animation: fadeup ease-in-out .5s;
-    animation-delay: 1.4s;
+    animation-delay: .9s;
     animation-fill-mode: forwards;
     opacity: 0;
 }
