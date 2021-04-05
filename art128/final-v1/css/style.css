@@ -581,21 +581,21 @@ h3.venue {
 
 /*  BRANCH STYLING */
 
-    /* .branch {
-       
-    } */
+    .branch {
+       border: 1px solid red;
+    }
 
     .branch-one {
         background-image: url(../img/branch-one.png);
         background-size: contain;
         background-repeat: no-repeat;
-        background-position: -17em 5em;
+        background-position: left;
         position: absolute;
         top: 0;
         left: 0;
-        width: 45%;
+        width: 25%;
         height: 50%;
-        /* z-index: -1; */
+        z-index: -1;
     }
 
     @media (max-width:767px) {
@@ -609,11 +609,11 @@ h3.venue {
         background-image: url(../img/branch-two.png);
         background-size: contain;
         background-repeat: no-repeat;
-        background-position: 9.5em 100px;
+        background-position: right;
         position: absolute;
         bottom: 0;
-        right: 0;
-        width: 75%;
+        right: 0em;
+        width: 60%;
         height: 50%;
         max-width: 1500px;
         z-index: -1;
@@ -629,11 +629,11 @@ h3.venue {
         background-image: url(../img/branch-three.png);
         background-size: contain;
         background-repeat: no-repeat;
-        background-position: -5em 8em;
+        background-position: left top;
         position: absolute;
         top: 0;
         left: 0;
-        width: 57%;
+        width: 100%;
         height: 100%;
         z-index: -1;
     }
@@ -648,12 +648,52 @@ h3.venue {
         background-image: url(../img/branch-four.png);
         background-size: contain;
         background-repeat: no-repeat;
-        background-position: 3em 10em;
+        background-position: right bottom;
         position: absolute;
-        bottom: 0;
         right: 0;
-        width: 18%;
-        min-height: 100%;
+        bottom: 0;
+        width: 30%;
+        height: 100%;
+        z-index: -1;
+        border: 1px solid red;
+    }
+
+    .branch-five {
+        background-image: url(../img/branch-five.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        position: absolute;
+        left: 0em;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    .branch-six {
+        background-image: url(../img/branch-six.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right center;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 60%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    .branch-seven {
+        background-image: url(../img/branch-seven.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 25%;
+        height: 100%;
         z-index: -1;
     }
 
