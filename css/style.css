@@ -421,13 +421,9 @@ section {
     color: rgba(255, 255, 255, .8);
 }
 
-.strike {
-    transform: scale(2)
-}
-
 @keyframes fadeIn {
     from {opacity: 0;}
-    to {opacity: .8;}
+    to {opacity: .6;}
     from {transform: translateY(1.2em);}
 }
 
@@ -447,6 +443,7 @@ section {
     /* border-top: 1px solid rgba(255, 255, 255, .8); */
     max-width: 250px;
     }
+
 
 @keyframes lefttoright {
     from {transform: translateX(-50em);}
