@@ -35,7 +35,7 @@ body {
     font-family: Helvetica, Arial, sans-serif;
     line-height: 1.5;
     color: rgba(255, 255, 255, .8);
-    background-color: rgba(25, 25, 25, 1)
+    background-color: rgba(25, 25, 25, 1);
 }
 
 /*  HEADINGS */
@@ -411,17 +411,18 @@ section {
   
 .hero h1 {
     animation: spacing ease-in-out .5s;
-    /* animation-delay: .2s; */
     animation-fill-mode: forwards;
     opacity: 0;
     filter: drop-shadow(2px 2px rgb(92, 92, 92));
-    font-family: coranto-2,serif;
-    font-weight: 700;
+    font-family: mrs-eaves-xl-serif,serif;
+    font-weight: 500;
     font-style: normal;
-    /* font-weight: lighter; */
+    font-size: 6em;
     color: rgba(255, 255, 255, .8);
-    letter-spacing: .05em;
+}
 
+.strike {
+    transform: scale(2)
 }
 
 @keyframes fadeIn {
@@ -439,10 +440,12 @@ section {
     opacity: 0;
     font-size: 110%;
     margin-top: 1em;
-    color: rgba(25, 25, 25, 1);
-    line-height: 1.5vh;
+    color: lightgray;
+    line-height: 1vh;
     margin-left: auto;
     margin-right: auto;
+    /* border-top: 1px solid rgba(255, 255, 255, .8); */
+    max-width: 250px;
     }
 
 @keyframes lefttoright {
@@ -453,16 +456,12 @@ section {
     
 .hero  {
     /* animation: lefttoright ease-out .6s; */
-    /* border: 1px solid rgba(255, 255, 255, .8); */
-    border-radius: .5em;
     color: rgba(255, 255, 255, .8);
     padding: 6em 4%;
     text-align: center;
-    /* margin-left: auto;
-    margin-right: auto; */
-    /* background-color: rgba(255, 255, 255, .8); */
-    /* background-image: radial-gradient(farthest-corner at 50% 1%, rgba(255, 255, 255, .8), rgba(25, 25, 25, 1) 70%); */
-    background-image: linear-gradient( to bottom right, rgba(255, 255, 255, 1), rgb(80, 80, 80));
+    margin-left: auto;
+    margin-right: auto;
+   /* background-image: linear-gradient( to bottom right, rgba(255, 255, 255, 1), rgb(80, 80, 80)); */
     }
 
 
@@ -606,14 +605,12 @@ p.four {
 
 .column.one-half h2 {
     text-align: center;
-    font-size: 4em;
-    margin-bottom: auto;
-    font-family: coranto-2,serif;
-    font-weight: 700;
+    font-size: 3em;
+    font-family: mrs-eaves-xl-serif,serif;
+    font-weight: 400;
     font-style: normal;
     transition: 250ms ease;
-    margin-left: 1.5em;
-    margin-right: 1.5em;
+    margin: auto;
 }
 
 .column.one-half h2:hover {
@@ -623,8 +620,9 @@ p.four {
 
 .column.one-half p {
         text-align: center;
-        margin-top: auto;
-        line-height: 1vh;
+        line-height: auto;
+        margin: auto;
+        padding-bottom: 2em;
     }
 
 .column.one-half.centered h2 {
@@ -692,55 +690,53 @@ p.four {
     .column.one-half.centered  {
         background: rgba(255, 255, 255, .8);
         color: rgba(25, 25, 25, 1);
-        padding: 0;
+        padding-bottom: 0;
         max-width: 300px;
         margin-top: 5em;
     }
 
     .column.one-half.centered h3 {
-        font-family: coranto-2,serif;
-        font-weight: 700;
-        font-style: normal;
-        font-weight: lighter;
+        font-family: mrs-eaves-xl-serif,serif;
+        font-weight: 400;
+    font-style: normal;
     }
 
     .column.one-third.centered {
         padding: 0;
         border: none;
-        
         margin: auto;
         color: rgba(255, 255, 255, .8);
     }
 
     .column.one-third.centered h3 {
-        font-family: coranto-2,serif;
-        font-weight: 700;
+        font-family: mrs-eaves-xl-serif,serif;
+        font-weight: 400;
         font-style: normal;
         font-weight: lighter;
+        padding-top: 2em;
     }
 
     .site-main .column.column.one-fourth  {
         text-align: center;
-        margin-bottom: auto;
-        margin-left: 1.5em;
-        margin-right: 1.5em;
     }
 
     .column.one-fourth h4 {
-        font-family: coranto-2,serif;
-        font-weight: 700;
+        font-family: mrs-eaves-xl-serif,serif;
+        font-weight: 400;
         font-style: normal;
         font-size: 3em;
         color: rgba(255, 255, 255, .8);
-        margin-bottom: auto;
-        padding-bottom: 0em;
-        line-height: 4vh;
-    }
+        margin: auto;
+        line-height: auto;
+        padding-bottom: auto;
+        }
+
+        
+        
     .column.one-fourth p {
         text-align: center;
-        margin-top: auto;
-        line-height: 1vh;
-        font-size: 90%;
+        margin: auto;
+        
         }
 /* TOGGLE NAV */
 
@@ -803,7 +799,4 @@ p.four {
             content: "\2715";
         }
 
-        .column.one-fourth p {
-            line-height: 5vh;
-        }
 }
