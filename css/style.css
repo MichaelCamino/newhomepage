@@ -513,10 +513,6 @@ section {
     border: 1px solid rgba(0, 0, 0, .8)
 }
 
-.row h2, p {
-    color: rgba(255, 255, 255, .8);
-}
-
 /*  CONTENT SECTION */
 
 @keyframes latefade {
@@ -599,6 +595,15 @@ p.four {
     animation-fill-mode: forwards;
     opacity: 0;
 }
+
+/* @media (max-width: 767px) {
+    .column.one-half {
+        align-content: center ;
+        border: 1px solid red;
+        display: inline-block;
+        align-content: space-around;
+    }
+} */
 
 .column.one-half h2 {
     text-align: center;
