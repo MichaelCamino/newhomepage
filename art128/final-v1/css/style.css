@@ -132,7 +132,7 @@ blockquote cite:before {
     left: -9999px;
 }
 
-/* IMAGES */
+/* RESPONSIVE IMAGES */
 img {
     max-width: 100%;
     height: auto;
@@ -307,6 +307,7 @@ body.demo::before {
 
 
 /*  ON LARGER SCREENS PLACE LOGO LEFT AND NAV RIGHT */
+
 @media (min-width: 768px) {
     .site-header .container {
         display: flex;
@@ -335,10 +336,9 @@ body.demo::before {
 /*  LOGO AREA */
 
 .site-id h1 {
-    font-size: 1.5em;
+    font-size: 1em;
     margin: 0;
     text-align: center;
-    transform: scale(.5);
 }
 
 
@@ -464,7 +464,6 @@ section {
     border: 3px solid rgba(169, 83, 168, 1);
     transform: scale(.8);
     padding: 1em;
-    /* margin-left: 3em; */
     }
 
    .next-show {
@@ -473,18 +472,8 @@ section {
    }
 
    h1.date {
-    position: absolute;
     text-align: center;
     font-size: 8em;
-    margin-left: .1em;
-}
-
-h3.venue {
-    position: absolute;
-    text-align: center;
-    font-size: 2em;
-    margin-top: -2.8em;
-    /* margin-left: .5em; */
 }
 
 .rectangle {
@@ -551,33 +540,25 @@ h3.venue {
 }
 
 .musings {
-    position: absolute;
-    margin-left: 3em;
     margin-bottom: 5em;
     height: 315px;
     width: 80%;
     max-width: 560px;
-    background-color: rgba(255, 255, 255, .8);
-}
-
-.musings-header {
-    position: relative;
-    text-align: right;
-    margin-bottom: .15em;
-    margin-right: .8em;
-}
-
-.musings-border {
-    height: 315px;
-    max-width: 560px;
-    border-top: 2px solid rgba(169, 83, 168, 1);
-    border-left: 2px solid rgba(169, 83, 168, 1);
-    transform: translate(0, -3em);
+    border: 2px solid rgba(169, 83, 168, 1);
 }
 
 
     /* PAGE ICON STYING */
 
+/*  BRANCH STYLING FOR SMALL SCREENS */
+
+    @media (max-width: 767px) {
+        .branch-one {
+            top: -5%;
+            left: -75%;
+            width: 100%;
+    }
+}
 
 /*  BRANCH STYLING */
 
@@ -593,20 +574,10 @@ h3.venue {
         position: absolute;
         top: 0;
         left: -25%;
-        width: 50%;
+        width: 45%;
         height: 50%;
         z-index: -1;
-        max-width: auto;
     }
-
-    /* @media (max-width:767px) {
-        .branch-one {
-            top: -5%;
-            left: -75%;
-            width: 100%;
-
-        }
-    } */
 
     .branch-two {
         background-image: url(../img/branch-two.png);
@@ -622,32 +593,18 @@ h3.venue {
         z-index: -1;
     }
 
-    /* @media (max-width:767px) {
-        .branch-two {
-        bottom: 15%;
-        right: -60%;
-        width: 100%;
-        }
-    } */
-
     .branch-three {
         background-image: url(../img/branch-three.png);
         background-size: contain;
         background-repeat: no-repeat;
         background-position: left top;
         position: absolute;
-        top: 0;
+        top: 20%;
         left: 0;
-        width: 50%;
+        width: 60%;
         height: 100%;
         z-index: -1;
     }
-    
-    /* @media (max-width:767px) {
-        .branch-three {
-        background-position: -11em 75px;
-        }
-    } */
 
     .branch-four {
         background-image: url(../img/branch-four.png);
@@ -656,10 +613,11 @@ h3.venue {
         background-position: right bottom;
         position: absolute;
         right: 0;
-        bottom: -80%;
+        bottom: -60%;
         width: 30%;
-        height: 150%;
+        height: 120%;
         z-index: -1;
+        margin: auto;
     }
 
     .branch-five {
@@ -684,7 +642,7 @@ h3.venue {
         right: 0;
         top: 20%;
         width: 60%;
-        height: 100%;
+        height: 120%;
         z-index: -1;
     }
 
@@ -695,9 +653,9 @@ h3.venue {
         background-position: bottom right;
         position: absolute;
         right: 0;
-        bottom: -70%;
-        width: 50%;
-        height: 100%;
+        bottom: -125%;
+        width: 45%;
+        height: 200%;
         z-index: -1;
     }
 
@@ -714,6 +672,30 @@ h3.venue {
         z-index: -1;
         max-width: 60%;
     }
+
+    
+/*  BRANCH STYLING FOR SMALL SCREENS */
+
+@media (max-width: 767px) {
+    .branch-one {
+        top: -5%;
+        left: -75%;
+        width: 100%;
+    }
+
+    .branch-two {
+        bottom: 13%;
+        right: 0;
+        width: 90%;
+        }
+
+    .branch-three {
+        bottom: 13%;
+        right: 0;
+        width: 90%;
+        }
+        
+}
 
 
 
