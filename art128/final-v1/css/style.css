@@ -122,10 +122,6 @@ blockquote cite:before {
     max-width: none;
 }
 
-.hidden {
-    display: none;
-}
-
 .hide-visually {
     position: absolute;
     top: -9999px;
@@ -139,33 +135,7 @@ img {
 }
 
 /* BUTTONS */
-.button, button {
-    font-size: inherit;
-    line-height: 1;
-    /* background-color: rgba(255, 0, 221, 1);
-    border: 1px solid rgba(255, 0, 221, 1); */
-    color: seashell;
-    padding: 1em;
-    display: inline-block;
-    margin: .5em .5em .5em 0;
-    text-align: center;
-    border-radius: .5em;
-}
-.button:hover, button:hover {
-    /* background-color: rgba(255, 0, 221, .6);
-    border-color: rgba(255, 0, 221, .6); */
-    color: rgba(0, 0, 0, .8);
-    text-decoration: none;
-    transition: 250ms ease;
-}
-.button.alternate {
-    background-color: transparent;
-    /* color: rgba(255, 0, 221, 1); */
-}
-.button.alternate:hover {
-    /* background-color: rgba(255, 0, 221, .6); */
-    color: rgba(0, 0, 0, .8);
-}
+
 
 /*  BASE LAYOUT */
 
@@ -341,10 +311,7 @@ body.demo::before {
     text-align: center;
 }
 
-.site-id img {
-    background-color: red;
-    max-width: 50%;
-}
+
 
 
 /*  SITE NAV */
@@ -784,8 +751,7 @@ section {
             text-align: center;
         }
         .toggle-nav .site-nav a:hover {
-            background-color: rgba(255, 255, 255, .8);
-            color: rgba(0, 0, 0, .8);
+            background-color: rgba(169, 83, 168, 1);
             transition: 300ms ease;
         }
         .toggle-nav[data-navstate="closed"] ul {
