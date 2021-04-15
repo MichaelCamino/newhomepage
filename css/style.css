@@ -321,7 +321,9 @@ body.demo::before {
 .site-footer a {
     color: rgba(255, 255, 255, .8);
     transition: 200ms ease;
+    position: relative;
 }
+
 
 .site-header a:hover,
 .site-footer a:hover {
@@ -329,6 +331,10 @@ body.demo::before {
     text-decoration: none;
     transition: 200ms ease;
     transform: scale(1.2);
+}
+
+.site-header a::after {
+    border-bottom: 2px soid rgba(255, 255, 255, 1);
 }
 
 /*  LOGO AREA */

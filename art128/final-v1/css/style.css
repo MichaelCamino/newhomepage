@@ -37,10 +37,6 @@ body {
     line-height: 1.5;
     color: rgba(255, 255, 255, .8);
     background-color: rgba(0, 0, 0, .95);
-    background-image: url(../img/Night_Background2.gif);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
 
 }
 
