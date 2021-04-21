@@ -35,8 +35,8 @@ body {
     font-size: 100%;  /* 16px */
     font-family: Helvetica, Arial, sans-serif;
     line-height: 1.5;
-    color: rgba(255, 255, 255, .8);
     background-color: rgba( 0, 0, 0, 1);
+    color: rgba(255, 255, 255, .8);
     background-image: url(../img/night_background_2.gif);
     background-repeat: no-repeat;
     background-position: top;
@@ -140,6 +140,16 @@ img {
 
 /* BUTTONS */
 
+button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    opacity: .8;
+    margin-top: .7em;
+    
+}
 
 /*  BASE LAYOUT */
 
@@ -292,26 +302,28 @@ body.demo::before {
 
 /*  STYLING FOR BOTH HEADER AND FOOTER */
 
-/* audio {
+audio {
     display: none;
-} */
+}
+
+
 
 
 .site-header a,
 .site-footer a {
-    color: rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, .8);
     padding: 0;
     transition: 300ms ease;
 }
  
 .site-footer a:hover {
-    color: rgba(255, 255, 255, .8);
+    color: rgba(255, 255, 255, .5);
     text-decoration: none;
     transform: translateY(-.1em)
 }
 
 i {
-    opacity: .8;
+    opacity: .9;
 }
 
 /*  LOGO AREA */
@@ -554,10 +566,9 @@ section {
     font-weight: 100;
     font-style: normal;
     font-size: 3em;
-    /* line-height: .8em; */
     animation: transform 2.5s ease;
     animation-fill-mode: forwards;
-   filter: drop-shadow(3px 3px black);
+    filter: drop-shadow(3px 3px black);
 }
 
 .hero h1, .hero p {
@@ -565,7 +576,7 @@ section {
     margin-right: auto;
     max-width: 1000px;
     text-align: center;
-    color: rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, .8);
 }
 
 
