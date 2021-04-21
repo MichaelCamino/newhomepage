@@ -299,13 +299,13 @@ body.demo::before {
 
 .site-header a,
 .site-footer a {
-    color: rgba(255, 255, 255, .8);
+    color: rgba(255, 255, 255, 1);
     padding: 0;
     transition: 300ms ease;
 }
  
 .site-footer a:hover {
-    color: rgba(255, 255, 255, .5);
+    color: rgba(255, 255, 255, .8);
     text-decoration: none;
     transform: translateY(-.1em)
 }
@@ -933,8 +933,7 @@ section {
             text-align: center;
         }
         .toggle-nav .site-nav a:hover {
-            background-color: rgba(169, 83, 168, 1);
-            transition: 300ms ease;
+           
         }
         .toggle-nav[data-navstate="closed"] ul {
             height: 0;
