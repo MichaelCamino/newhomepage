@@ -916,65 +916,6 @@ section {
 
 /* TOGGLE NAV */
 
-@media (max-width: 767px) {
-    .toggle-nav .site-id {
-        position: absolute;
-        max-width: 200px;
-        }
-
-    .toggle-nav .site-nav {
-        text-align: right;
-    }    
-    
-    .toggle-nav .site-nav .menu-button {
-            display: block;
-            display: inline-block;
-            cursor: pointer;
-            padding: .3em .8em;
-            margin-bottom:  .8em;
-            border: 1px solid rgba(255, 255, 255, .8);
-        }
-
-    .toggle-nav .site-nav .menu-button::selection {
-        background-color: transparent;
-    }
-    
-    .toggle-nav .site-nav ul {
-            display: block;
-            text-align: center;
-        }
-        .toggle-nav .site-nav a:hover {
-           
-        }
-        .toggle-nav[data-navstate="closed"] ul {
-            height: 0;
-            overflow: hidden;
-        }
-        .toggle-nav[data-navstate="open"] ul {
-            height: auto;
-            overflow: visible;
-        }
-
-        /*  NAVICON */
-        .toggle-nav .site-nav .menu-button.navicon {
-            border: none;
-            padding: 0;
-            color: rgba(0, 0, 0, 0);
-        }
-
-        .toggle-nav .site-nav .menu-button.navicon::after {
-            content: "\2630";
-            display: inline-block;
-            padding: .2em 0;
-            margin: 0;
-            color: rgba(255, 255, 255, .8);
-            font-size: 1.5em;
-        }
-
-        .toggle-nav[data-navstate="open"] .site-nav .menu-button.navicon::after {
-            content: "\2715";
-        }
-    }
 
         /*  SUB PAGES */
 
