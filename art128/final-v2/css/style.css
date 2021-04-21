@@ -40,7 +40,7 @@ body {
     background-image: url(../img/night_background_2.gif);
     background-repeat: no-repeat;
     background-position: top;
-    background-size: 1920px;
+    background-size: contain;
 }
 
 /*  HEADINGS */
@@ -148,8 +148,15 @@ button {
     font-size: 1em;
     opacity: .8;
     margin-top: .7em;
-    
-}
+    transition: 250ms ease;
+    }
+
+    button:hover {
+        cursor: pointer;
+        color: rgba(169, 83, 168, 1);
+        transition: 250ms ease;
+        opacity: 1;
+    }
 
 /*  BASE LAYOUT */
 
@@ -281,6 +288,8 @@ body.demo::before {
 /* SITE STRUCTURE */
 
 /*  SITE HEADER */
+
+
 
 .site-header {
     padding: .5em 0;
@@ -510,6 +519,43 @@ li {
     transition: 500ms ease;
 }
 
+@media (max-width:767px) {
+    #star-about {
+        top: 100%;
+    }
+    #star-performance {
+        top: 250%;
+        left: 20%;
+    }
+    #star-media {
+        top: 155%;
+        left: 40%;
+    }
+    #star-merch {
+        top: 180%;
+        left: 65%;
+    }
+    #star-blog {
+        top: 80%;
+    }
+    #star-social {
+        top: 250%;
+    }
+    .hero h1 {
+        margin: auto;
+        line-height: 3vh;
+    }
+    .site-header h1 {
+        max-width: 50%;
+    }
+    button {
+        font-size: .5em;
+        margin-top: 1.5em;
+    }
+   
+}
+
+
 /*  SITE MAIN */
 
 
@@ -561,6 +607,8 @@ section {
     
 }
 
+
+
 .hero h1 {
     font-family: novecento-sans-wide,sans-serif;
     font-weight: 100;
@@ -569,7 +617,10 @@ section {
     animation: transform 2.5s ease;
     animation-fill-mode: forwards;
     filter: drop-shadow(3px 3px black);
+    
 }
+
+
 
 .hero h1, .hero p {
     margin-left: auto;
