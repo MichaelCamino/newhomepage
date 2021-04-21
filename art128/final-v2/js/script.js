@@ -13,7 +13,7 @@ menubutton.addEventListener('click', function () {
 
 });
 
-   //STICKY NAV - CLOSE THE NAV ON STICKY HEADER NAV LINK CLICKS
+   // STICKY NAV - CLOSE THE NAV ON STICKY HEADER NAV LINK CLICKS 
    const stickynavlinks = document.querySelectorAll(".sticky nav a");
    for (var i = 0; i < stickynavlinks.length; i++) {
        stickynavlinks[i].addEventListener('click', function () {
@@ -21,4 +21,11 @@ menubutton.addEventListener('click', function () {
        });
    };
 
+});
+
+// AUDIO PLAYER
+window.addEventListener("DOMContentLoaded", event => {
+    const audio = document.querySelector("audio");
+        audio.volume = .2;
+        audio.play(onclick);
 });

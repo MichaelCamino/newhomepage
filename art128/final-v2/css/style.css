@@ -292,6 +292,11 @@ body.demo::before {
 
 /*  STYLING FOR BOTH HEADER AND FOOTER */
 
+/* audio {
+    display: none;
+} */
+
+
 .site-header a,
 .site-footer a {
     color: rgba(255, 255, 255, .8);
@@ -305,7 +310,9 @@ body.demo::before {
     transform: translateY(-.1em)
 }
 
-
+i {
+    opacity: .8;
+}
 
 /*  LOGO AREA */
 
@@ -408,6 +415,7 @@ li {
   .star-about:hover {
       transform: scale(3);
       transition: 500ms ease;
+      box-shadow: 20px rgba(169, 83, 168, 1);
   }
 
   .star-performance {
