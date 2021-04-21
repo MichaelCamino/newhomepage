@@ -916,6 +916,26 @@ section {
 
 /* TOGGLE NAV */
 
+@media (max-width: 767px) {
+    .toggle-nav .site-id {
+        position: absolute;
+        max-width: 200px;
+        }
+
+    .toggle-nav .site-nav {
+        text-align: right;
+    }    
+    
+
+    .toggle-nav .site-nav .menu-button::selection {
+        background-color: transparent;
+    }
+    
+    .toggle-nav .site-nav ul {
+            display: block;
+            
+        }
+    }
 
         /*  SUB PAGES */
 
