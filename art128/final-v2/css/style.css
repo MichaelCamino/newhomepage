@@ -36,7 +36,11 @@ body {
     font-family: Helvetica, Arial, sans-serif;
     line-height: 1.5;
     color: rgba(255, 255, 255, .8);
-    background-color: rgba( 3, 3, 3, 1);
+    background-color: rgba( 0, 0, 0, 1);
+    background-image: url(../img/night_background_2.gif);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 1920px;
 }
 
 /*  HEADINGS */
@@ -271,7 +275,8 @@ body.demo::before {
 .site-header {
     padding: .5em 0;
     background-color: transparent;
-    
+    position: relative;
+
 }
 
 
@@ -340,125 +345,148 @@ body.demo::before {
 
 /*  STARS */
 
+li {
+    z-index: 1;
+}
+
 #star-about {
     position: absolute;
-    top: 20%;
+    top: 150%;
     left: 10%;
-    padding: 0;
 }
 
 #star-performance {
     position: absolute;
-    top: 55%;
+    top: 700%;
     left: 15%;
 }
 
 #star-media {
     position: absolute;
-    top: 30%;
+    top: 900%;
     left: 35%;
 }
 
 #star-merch {
     position: absolute;
-    top: 60%;
-    left: 60%;
+    top: 800%;
+    left: 70%;
 }
 
 #star-blog {
     position: absolute;
-    top: 10%;
+    top: 300%;
     left: 55%;
 }
 
 #star-social {
     position: absolute;
-    top: 25%;
+    top: 400%;
     left: 80%;
 }
 
 @keyframes glow {
     from {
-      box-shadow: 0 0 10px -10px rgba(169, 83, 168, 1);
+      box-shadow: 0 0 10px 0px rgba(169, 83, 168, 1);
     }
     to {
-      box-shadow: 0 0 10px 10px white;
+      box-shadow: 0 0 10px 15px rgba(187, 255, 255, 0.5);
     }
   }
 
 
   .star-about {
       animation: glow 3s infinite alternate;
+      height: 5px;
+      width: 5px;
+      background-color: rgba(255, 255, 255, .7);
+      border: 1px solid transparent;
+      border-radius: 50%;
       transition: 500ms ease;
   }
 
   .star-about:hover {
-      transform: scale(1.5);
+      transform: scale(3);
       transition: 500ms ease;
   }
 
   .star-performance {
     animation: glow 3s infinite alternate;
     animation-delay: 3s;
+    height: 5px;
+    width: 5px;
+    background-color: rgba(255, 255, 255, .7);
     border: 1px solid transparent;
     border-radius: 50%;
     transition: 500ms ease;
 }
 
 .star-performance:hover {
-    transform: scale(1.5);
+    transform: scale(3);
     transition: 500ms ease;
 }
 
 .star-media {
     animation: glow 3s infinite alternate;
     animation-delay: 5s;
+    height: 5px;
+    width: 5px;
+    background-color: rgba(255, 255, 255, .7);
     border: 1px solid transparent;
     border-radius: 50%;
     transition: 500ms ease;
 }
 
 .star-media:hover {
-    transform: scale(1.5);
+    transform: scale(3);
     transition: 500ms ease;
 }
 
 .star-merch {
     animation: glow 3s infinite alternate;
     animation-delay: 1s;
+    height: 5px;
+    width: 5px;
+    background-color: rgba(255, 255, 255, .7);
     border: 1px solid transparent;
     border-radius: 50%;
     transition: 500ms ease;
 }
 
 .star-merch:hover {
-    transform: scale(1.5);
+    transform: scale(3);
     transition: 500ms ease;
 }
 
 .star-blog {
     animation: glow 3s infinite alternate;
     animation-delay: 2s;
+    height: 5px;
+     width: 5px;
+    background-color: rgba(255, 255, 255, .7);
     border: 1px solid transparent;
     border-radius: 50%;
     transition: 500ms ease;
 }
 
 .star-blog:hover {
-    transform: scale(1.5);
+    transform: scale(3);
     transition: 500ms ease;
 }
 
 .star-social {
     animation: glow 3s infinite alternate;
     animation-delay: 4s;
+    height: 5px;
+    width: 5px;
+    background-color: rgba(255, 255, 255, .7);
     border: 1px solid transparent;
     border-radius: 50%;
     transition: 500ms ease;
 }
 
 .star-social:hover {
-    transform: scale(1.5);
+    transform: scale(3);
     transition: 500ms ease;
 }
 
@@ -494,16 +522,15 @@ section {
     text-align: center;
     margin-bottom: 1em;
     margin-top: 0;
-    background-image: url(../img/Night_Background_Top.gif);
-    z-index: -1;
-    background-position: center;
-    background-repeat: no-repeat;
 
 }
 
 @keyframes transform {
     from {
-        transform: translateY(100px);
+        transform: translateY(-80px);
+    }
+    to {
+        transform: translateY(-150px);
     }
     from {
         opacity: 0;
@@ -511,7 +538,7 @@ section {
     to {
         opacity: 100%;
     }
-    )
+    
 }
 
 .hero h1 {
@@ -519,8 +546,10 @@ section {
     font-weight: 100;
     font-style: normal;
     font-size: 3em;
-    line-height: .8em;
-    animation: transform 2s ease;
+    /* line-height: .8em; */
+    animation: transform 2.5s ease;
+    animation-fill-mode: forwards;
+   filter: drop-shadow(3px 3px black);
 }
 
 .hero h1, .hero p {
@@ -1065,7 +1094,7 @@ form input[type=submit]:hover {
 .site-header.sticky {
     position: fixed;
     width: 100%;
-    background-color: rgba(13,13,13,1)
+    background-color: rgba(13,13,13,1);
 
 }
 
