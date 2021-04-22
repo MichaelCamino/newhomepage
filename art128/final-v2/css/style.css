@@ -543,7 +543,7 @@ li {
     }
     .hero h1 {
         margin: auto;
-        line-height: 3vh;
+        line-height: auto;
     }
     .site-header h1 {
         max-width: 50%;
