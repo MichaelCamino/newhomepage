@@ -37,7 +37,7 @@ body {
     line-height: 1.5;
     background-color: rgba( 0, 0, 0, 1);
     color: rgba(255, 255, 255, .8);
-    background-image: url(../img/night_background_2.gif);
+    background-image: url(https://res.cloudinary.com/dj5cme0nj/image/upload/c_scale,q_60,w_1920/v1619728365/night_background_2_uyduoo.png);
     background-repeat: no-repeat;
     background-position: top;
     background-size: contain;
@@ -422,8 +422,16 @@ li {
     }
   }
 
+  .site-header li a {
+    text-decoration: none;
+}
 
-  .star-about {
+
+.star {
+    padding: 2em
+}
+
+  .star div {
       animation: glow 3s infinite alternate;
       height: 5px;
       width: 5px;
@@ -433,91 +441,48 @@ li {
       transition: 500ms ease;
   }
 
-  .star-about:hover {
+  .star:hover div {
       transform: scale(3);
       transition: 500ms ease;
-      box-shadow: 20px rgba(169, 83, 168, 1);
   }
 
-  .star-performance {
-    animation: glow 3s infinite alternate;
+  .star span {
+      display: none;
+      margin-right: 5em;
+  }
+
+  .star:hover span {
+      display: block;
+      font-size: 10px;
+      font-family: novecento-sans-wide,sans-serif;
+      font-weight: lighter;
+      padding-right: 5em;
+      }
+
+  .star .star-about {
+      animation-delay: 0;
+  }
+
+  .star .star-performance {
     animation-delay: 3s;
-    height: 5px;
-    width: 5px;
-    background-color: rgba(255, 255, 255, .7);
-    border: 1px solid transparent;
-    border-radius: 50%;
-    transition: 500ms ease;
-}
+    }
 
-.star-performance:hover {
-    transform: scale(3);
-    transition: 500ms ease;
-}
+.star .star-media {
+   animation-delay: 5s;
+   }
 
-.star-media {
-    animation: glow 3s infinite alternate;
-    animation-delay: 5s;
-    height: 5px;
-    width: 5px;
-    background-color: rgba(255, 255, 255, .7);
-    border: 1px solid transparent;
-    border-radius: 50%;
-    transition: 500ms ease;
-}
-
-.star-media:hover {
-    transform: scale(3);
-    transition: 500ms ease;
-}
-
-.star-merch {
-    animation: glow 3s infinite alternate;
+.star .star-merch {
     animation-delay: 1s;
-    height: 5px;
-    width: 5px;
-    background-color: rgba(255, 255, 255, .7);
-    border: 1px solid transparent;
-    border-radius: 50%;
-    transition: 500ms ease;
-}
+ }
 
-.star-merch:hover {
-    transform: scale(3);
-    transition: 500ms ease;
-}
-
-.star-blog {
-    animation: glow 3s infinite alternate;
+.star .star-blog {
     animation-delay: 2s;
-    height: 5px;
-     width: 5px;
-    background-color: rgba(255, 255, 255, .7);
-    border: 1px solid transparent;
-    border-radius: 50%;
-    transition: 500ms ease;
 }
 
-.star-blog:hover {
-    transform: scale(3);
-    transition: 500ms ease;
-}
-
-.star-social {
-    animation: glow 3s infinite alternate;
+.star .star-social {
     animation-delay: 4s;
-    height: 5px;
-    width: 5px;
-    background-color: rgba(255, 255, 255, .7);
-    border: 1px solid transparent;
-    border-radius: 50%;
-    transition: 500ms ease;
-}
+ }
 
-.star-social:hover {
-    transform: scale(3);
-    transition: 500ms ease;
-}
 
 @media (max-width:767px) {
     #star-about {
