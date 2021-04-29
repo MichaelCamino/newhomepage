@@ -379,7 +379,7 @@ li {
 
 #star-about {
     position: absolute;
-    top: 150%;
+    top: 250%;
     left: 10%;
 }
 
@@ -486,7 +486,7 @@ li {
 
 @media (max-width:767px) {
     #star-about {
-        top: 100%;
+        top: 150%;
     }
     #star-performance {
         top: 250%;
