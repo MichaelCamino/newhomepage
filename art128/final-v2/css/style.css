@@ -448,8 +448,10 @@ li {
 
   .star span {
       display: none;
-      margin-right: 5em;
-  }
+      position: absolute;
+        top: -.66em;
+        left: 1em;
+    }
 
   .star:hover span {
       display: block;
@@ -587,7 +589,6 @@ section {
     font-size: 3em;
     animation: transform 2.5s ease;
     animation-fill-mode: forwards;
-    filter: drop-shadow(3px 3px black);
     
 }
 
