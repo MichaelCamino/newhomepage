@@ -37,9 +37,9 @@ body {
     line-height: 1.5;
     background-color: rgba( 12, 12, 12, 1);
     color: rgba(255, 255, 255, .8);
-    background-image: url(../img/nightbackgroundvector2.gif);
+    background-image: url(../img/nightbackgroundvectorfront.gif), url(../img/nightbackgroundvectorback.gif);
     background-repeat: no-repeat;
-    background-position: top, bottom;
+    background-position: top, top;
     background-size: contain;
 }
 
