@@ -534,6 +534,7 @@ li {
 
 .hero-bottom  {
     margin-bottom: -15px;
+    opacity: .8;
 }
 
 
@@ -876,7 +877,7 @@ section {
             left: 0;
             bottom: -45%;
             width: 40%;
-            height: 100%;
+            height: 60%;
             z-index: -1;
         }
     
@@ -900,9 +901,9 @@ section {
             background-position: bottom right;
             position: absolute;
             right: 0;
-            bottom: -125%;
+            bottom: 0;
             width: 45%;
-            height: 200%;
+            height: 165%;
             z-index: -1;
         }
     
@@ -917,7 +918,6 @@ section {
             width: 50%;
             height: 100%;
             z-index: -1;
-            max-width: 60%;
         }
     }
 
@@ -1104,3 +1104,83 @@ form input[type=submit]:hover {
     padding-top: 3em;
 }
 
+/*  BRANCH SCROLL ANIMATION */
+
+h1 .hero-bottom {
+    opacity: 0;
+}
+
+.branch {
+    opacity: .5;
+    transition: 4s ease-out;
+}
+
+.branch-one {
+    clip-path: circle(0 at 50%);
+}
+
+.branch-two {
+    clip-path: circle(0 at 100%);
+}
+
+.branch-three {
+    clip-path: circle(0 at 0 0);
+}
+
+.branch-four {
+    clip-path: circle(0 at 100% 100%);
+}
+
+.branch-five {
+    clip-path: circle(0 at 0 100%);
+}
+
+.branch-six {
+    clip-path: circle(0 at 100% 10%);
+}
+
+.branch-seven {
+    clip-path: circle(0 at 100% 100%);
+}
+
+.branch-eight {
+    clip-path: circle(0 at 0 100%);
+}
+
+
+section[data-sectionstate="active"] .branch {
+    opacity: 1;
+    clip-path: circle(100%);
+}
+
+section[data-sectionstate="active"] .branch-one {
+    transform: translateY(1em);
+}
+
+section[data-sectionstate="active"] .branch-two {
+    transform: translateY(-1em);
+    }
+
+section[data-sectionstate="active"] .branch-three {
+    transform: translatey(1em);
+    }
+
+section[data-sectionstate="active"] .branch-four {
+    transform: translateY(-1em);
+    }
+
+section[data-sectionstate="active"] .branch-five {
+    transform: translateY(-1em);
+     }
+
+section[data-sectionstate="active"] .branch-six {
+    transform: translateY(1em);
+     }
+
+section[data-sectionstate="active"] .branch-seven {
+    transform: translateY(-2em);
+    }
+
+section[data-sectionstate="active"] .branch-eight {
+    transform: translateY(-.5em);
+    }
