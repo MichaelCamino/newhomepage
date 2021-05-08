@@ -398,6 +398,9 @@ i {
 
 li {
     z-index: 1;
+    font-family: playfair-display,serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 
@@ -445,7 +448,7 @@ li {
   .star:hover span {
         display: block;
         font-size: 8px;
-        font-family: le-monde-livre-std, serif;
+        : le-monde-livre-std, serif;
         font-weight: 300;
         font-style: normal;
       }
@@ -539,8 +542,8 @@ section {
 
 
 .hero h1 {
-    font-family: le-monde-livre-std, serif;
-    font-weight: 300;
+    font-family: playfair-display,serif;
+    font-weight: 400;
     font-style: normal;
     animation: transform 2.5s ease;
     animation-fill-mode: forwards;
@@ -653,8 +656,8 @@ section {
 
 
     h1, h2, h3 {
-        font-family: le-monde-livre-std, serif;
-        font-weight: 300;
+        font-family: playfair-display,serif;
+        font-weight: 400;
         font-style: normal;
     }
 
