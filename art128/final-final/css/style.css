@@ -174,6 +174,8 @@ body {margin: 0;}
 
 /*  MEDIA QUERIES */
 
+
+
 @media (min-width: 768px) {
     /*  TABLET SIZED STYLING GOES HERE */
     
@@ -398,41 +400,7 @@ li {
     z-index: 1;
 }
 
-#star-about {
-    position: absolute;
-    top: 250%;
-    left: 10%;
-}
 
-#star-performance {
-    position: absolute;
-    top: 650%;
-    left: 15%;
-}
-
-#star-media {
-    position: absolute;
-    top: 500%;
-    left: 35%;
-}
-
-#star-merch {
-    position: absolute;
-    top: 700%;
-    left: 70%;
-}
-
-#star-blog {
-    position: absolute;
-    top: 300%;
-    left: 55%;
-}
-
-#star-social {
-    position: absolute;
-    top: 400%;
-    left: 80%;
-}
 
 @keyframes glow {
     from {
@@ -507,45 +475,7 @@ li {
  }
 
 
-@media (max-width:767px) {
-    #star-about {
-        top: 150%;
-    }
-    #star-performance {
-        top: 250%;
-        left: 20%;
-    }
-    #star-media {
-        top: 155%;
-        left: 40%;
-    }
-    #star-merch {
-        top: 180%;
-        left: 65%;
-    }
-    #star-blog {
-        top: 80%;
-    }
-    #star-social {
-        top: 250%;
-    }
-    .hero h1 {
-        margin: auto;
-        line-height: auto;
-    }
-    .site-header h1 {
-        max-width: 50%;
-    }
-    button {
-        font-size: .5em;
-        margin-top: 1.5em;
-    }
 
-    .star:hover span {
-        display: none;
-    }
-   
-}
 
 
 /*  SITE MAIN */
@@ -583,7 +513,7 @@ section {
 
 
 .hero  {
-    padding: 25em 4%;
+    padding: 18em 4%;
     text-align: center;
     margin-bottom: 1em;
     margin-top: 0;
@@ -674,7 +604,8 @@ section {
         width: 85%;
     }
     h2.merch {
-        text-align: left;
+        text-align: center;
+        margin-right: 1em;
     }
     .rectangle {
         border: none;
@@ -713,226 +644,10 @@ section {
 
 /*  BRANCH STYLING  */
 
-    .branch-one {
-            background-image: url(../img/branch-one1.png);
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: left;
-            position: absolute;
-           height: 50%;
-            z-index: -1;
-            top: -5%;
-            left: -75%;
-            width: 100%;
-            
-    }
-
-    .branch-two {
-            background-image: url(../img/branch-two.png);
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: right;
-            position: absolute;
-            height: 50%;
-            max-width: 1500px;
-            z-index: -1;
-            bottom: 20%;
-            right: 0;
-            width: 90%;
-        }
-
-    .branch-three {
-            background-image: url(../img/branch-three.png);
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: left top;
-            position: absolute;
-            z-index: -1;
-            top: 57%;
-            left: 0;
-            width: 25%;
-            height: 20%;
-        }
-
-    .branch-four {
-            background-image: url(../img/branch-four.png);
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: right bottom;
-            position: absolute;
-            right: 0;
-            height: 120%;
-            z-index: -1;
-            margin: auto;
-            width: 22%;
-            bottom: -9%;
-    }
     
-    .branch-five {
-        background-image: url(../img/branch-five.png);
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: bottom left;
-            position: absolute;
-            left: 0;
-            height: 100%;
-            z-index: -1;
-            bottom: -76%;
-            width: 60%;
-    }
 
-    .branch-six {
-        background-image: url(../img/branch-six.png);
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: right center;
-            position: absolute;
-            right: 0;
-            height: 120%;
-            z-index: -1;
-            top: 55%;
-            width: 70%;
-    }
-
-    .branch-seven {
-        background-image: url(../img/branch-seven.png);
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: bottom right;
-            position: absolute;
-            right: 0;
-            height: 200%;
-            z-index: -1;
-            width: 28%;
-            bottom: -68%;
-    }
-
-    .branch-eight {
-        background-image: url(../img/branch-eight.png);
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: bottom left;
-            position: absolute;
-            left: 0;
-            height: 10%;
-            z-index: -1;
-            width: 32%;
-            bottom: 52%;
-    }
-
-
-    /* BRANCH STYLING FOR LARGE SCREENS */
 
     
- 
-    @media (min-width:1050px) {
-
-        .branch-one {
-            background-image: url(../img/branch-one.png);
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: left;
-            position: absolute;
-            top: 0;
-            left: -25%;
-            width: 45%;
-            height: 50%;
-            z-index: -1;
-        }
-    
-        .branch-two {
-            background-image: url(../img/branch-two.png);
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: right;
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            width: 60%;
-            height: 50%;
-            max-width: 1500px;
-            z-index: -1;
-        }
-    
-        .branch-three {
-            background-image: url(../img/branch-three.png);
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: left top;
-            position: absolute;
-            top: 20%;
-            left: 0;
-            width: 60%;
-            height: 100%;
-            z-index: -1;
-        }
-    
-        .branch-four {
-            background-image: url(../img/branch-four.png);
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: right bottom;
-            position: absolute;
-            right: 0;
-            bottom: -60%;
-            width: 30%;
-            height: 120%;
-            z-index: -1;
-            margin: auto;
-        }
-    
-        .branch-five {
-            background-image: url(../img/branch-five.png);
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: top left;
-            position: absolute;
-            left: 0;
-            bottom: 55%;
-            width: 40%;
-            height: 60%;
-            z-index: -1;
-        }
-    
-        .branch-six {
-            background-image: url(../img/branch-six.png);
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: right center;
-            position: absolute;
-            right: 0;
-            top: 20%;
-            width: 60%;
-            height: 120%;
-            z-index: -1;
-        }
-    
-        .branch-seven {
-            background-image: url(../img/branch-seven.png);
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: bottom right;
-            position: absolute;
-            right: 0;
-            bottom: 0;
-            width: 45%;
-            height: 165%;
-            z-index: -1;
-        }
-    
-        .branch-eight {
-            background-image: url(../img/branch-eight.png);
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: bottom left;
-            position: absolute;
-            left: 0;
-            bottom: 35%;
-            width: 50%;
-            height: 100%;
-            z-index: -1;
-        }
-    }
 
 
 
@@ -1192,4 +907,492 @@ section[data-sectionstate="active"] .branch-seven {
 
 section[data-sectionstate="active"] .branch-eight {
     transform: translateY(-.5em);
+    }
+
+
+/* BRANCH STYLING FOR MEDIUM SCREENS */
+
+    @media (min-width:1050px) {
+
+    .branch-one {
+        background-image: url(../img/branch-one.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: left;
+        position: absolute;
+        top: -5%;
+        left: -25%;
+        width: 45%;
+        height: 50%;
+        z-index: -1;
+    }
+
+    .branch-two {
+        background-image: url(../img/branch-two.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 65%;
+        height: 50%;
+        max-width: 1500px;
+        z-index: -1;
+    }
+
+    .branch-three {
+        background-image: url(../img/branch-three.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: left top;
+        position: absolute;
+        top: 25%;
+        left: 0;
+        width: 70%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    .branch-four {
+        background-image: url(../img/branch-four.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        position: absolute;
+        right: 0;
+        bottom: -55%;
+        width: 30%;
+        height: 100%;
+        z-index: -1;
+        margin: auto;
+    }
+
+    .branch-five {
+        background-image: url(../img/branch-five.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top left;
+        position: absolute;
+        left: 0;
+        bottom: 55%;
+        width: 40%;
+        height: 60%;
+        z-index: -1;
+    }
+
+    .branch-six {
+        background-image: url(../img/branch-six.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right center;
+        position: absolute;
+        right: 0;
+        top: 25%;
+        width: 80%;
+        height: 120%;
+        z-index: -1;
+    }
+
+    .branch-seven {
+        background-image: url(../img/branch-seven.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        position: absolute;
+        right: 0;
+        bottom: 10%;
+        width: 48%;
+        height: 165%;
+        z-index: -1;
+    }
+
+    .branch-eight {
+        background-image: url(../img/branch-eight.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        position: absolute;
+        left: 0;
+        bottom: 38%;
+        width: 48%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    h1.date {
+        font-size: 4em;
+        margin-top: 2.5em;
+    }
+
+    #star-about {
+        position: absolute;
+        top: 200%;
+        left: 20%;
+    }
+    
+    #star-performance {
+        position: absolute;
+        top: 400%;
+        left: 10%;
+    }
+    
+    #star-media {
+        position: absolute;
+        top: 450%;
+        left: 35%;
+    }
+    
+    #star-merch {
+        position: absolute;
+        top: 500%;
+        left: 70%;
+    }
+    
+    #star-blog {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+    }
+    
+    #star-social {
+        position: absolute;
+        top: 200%;
+        left: 80%;
+    }
+}
+
+/* STYLING FOR TABLETS */
+
+@media (max-width: 1049px) {
+    
+    #star-about {
+        position: absolute;
+        top: 150%;
+        left: 10%;
+    }
+    #star-performance {
+        position: absolute;
+        top: 320%;
+        left: 20%;
+    }
+    #star-media {
+        top: 90%;
+        left: 30%;
+        position: absolute;
+    }
+    #star-merch {
+        position: absolute;
+        top: 330%;
+        left: 70%;
+    }
+    #star-blog {
+        position: absolute;
+        top: 70%;
+        left: 60%;
+    }
+    #star-social {
+        position: absolute;
+        top: 100%;
+        left: 80%;
+    }
+
+    .hero {
+        padding-top: 11em;
+    }
+
+    .hero h1 {
+        margin: auto;
+        font-size: 2em;
+        padding-top: 2em;
+    }
+
+    h1.date {
+        font-size: 4em;
+        margin-top: 2em;
+        margin-right: 2em;
+    }
+   
+    .branch-one {
+        background-image: url(../img/branch-one1.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: left;
+        position: absolute;
+       height: 60%;
+        z-index: -1;
+        top: -7%;
+        left: -42%;
+        width: 60%;
+        
+}
+
+.branch-two {
+        background-image: url(../img/branch-two.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right;
+        position: absolute;
+        height: 50%;
+        max-width: 1500px;
+        z-index: -1;
+        bottom: -4%;
+        right: 0;
+        width: 72%;
+    }
+
+.branch-three {
+        background-image: url(../img/branch-three.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: left top;
+        position: absolute;
+        z-index: -1;
+        top: 38%;
+        left: 0;
+        width: 58%;
+        height: 40%;
+    }
+
+.branch-four {
+        background-image: url(../img/branch-four.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        position: absolute;
+        right: 0;
+        height: 120%;
+        z-index: -1;
+        margin: auto;
+        width: 22%;
+        bottom: -50%;
+}
+
+.branch-five {
+    background-image: url(../img/branch-five.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        position: absolute;
+        left: 0;
+        height: 100%;
+        z-index: -1;
+        bottom: 48%;
+        width: 50%;
+}
+
+.branch-six {
+    background-image: url(../img/branch-six.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right center;
+        position: absolute;
+        right: 0;
+        height: 120%;
+        z-index: -1;
+        top: 30%;
+        width: 90%;
+}
+
+.branch-seven {
+    background-image: url(../img/branch-seven.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        position: absolute;
+        right: 0;
+        height: 200%;
+        z-index: -1;
+        width: 48%;
+        bottom: 40%;
+}
+
+.branch-eight {
+    background-image: url(../img/branch-eight.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        position: absolute;
+        left: -8%;
+        height: 20%;
+        z-index: -1;
+        width: 52%;
+        bottom: 42%;
+}
+
+}
+
+/* STYLING FOR MOBILE */
+
+    @media (max-width:767px) {
+    
+        #star-about {
+            position: absolute;
+            top: 150%;
+            left: 10%;
+        }
+        #star-performance {
+            position: absolute;
+            top: 60%;
+            left: 30%;
+        }
+        #star-media {
+            top: 170%;
+            left: 40%;
+            position: absolute;
+        }
+        #star-merch {
+            position: absolute;
+            top: 180%;
+            left: 65%;
+        }
+        #star-blog {
+            position: absolute;
+            top: 70%;
+            left: 60%;
+        }
+        #star-social {
+            position: absolute;
+            top: 100%;
+            left: 80%;
+        }
+
+        .hero {
+            padding-bottom: 5em;
+            padding-top: 17em;
+        }
+
+        .hero h1 {
+            margin: auto;
+            font-size: 2em;
+            padding-top: 2em;
+        }
+        .site-header h1 {
+            max-width: 50%;
+        }
+    
+        button {
+            font-size: .5em;
+            margin-top: 1.5em;
+        }
+    
+        .star:hover span {
+            display: none;
+        }
+
+        h1.date {
+            margin: 0;
+        }
+
+        h2.media {
+            text-align: right;
+            margin-right: .3em;
+        }
+       
+        .branch-one {
+            background-image: url(../img/branch-one1.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: left;
+            position: absolute;
+           height: 50%;
+            z-index: -1;
+            top: -7%;
+            left: -55%;
+            width: 80%;
+            
+    }
+
+    .branch-two {
+            background-image: url(../img/branch-two.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: right;
+            position: absolute;
+            height: 50%;
+            max-width: 1500px;
+            z-index: -1;
+            bottom: 18%;
+            right: 0;
+            width: 90%;
+        }
+
+    .branch-three {
+            background-image: url(../img/branch-three.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: left top;
+            position: absolute;
+            z-index: -1;
+            top: 45%;
+            left: -30%;
+            width: 60%;
+            height: 21%;
+        }
+
+    .branch-four {
+            background-image: url(../img/branch-four.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: right bottom;
+            position: absolute;
+            right: 0;
+            height: 120%;
+            z-index: -1;
+            width: 25%;
+            bottom: -32%;
+    }
+    
+    .branch-five {
+        background-image: url(../img/branch-five.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: bottom left;
+            position: absolute;
+            left: 0;
+            height: 100%;
+            z-index: -1;
+            bottom: -15%;
+            width: 60%;
+    }
+
+    .branch-six {
+        background-image: url(../img/branch-six.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: right center;
+            position: absolute;
+            right: 0;
+            height: 120%;
+            z-index: -1;
+            top: 45%;
+            width: 80%;
+    }
+
+    .branch-seven {
+        background-image: url(../img/branch-seven.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: bottom right;
+            position: absolute;
+            right: 0;
+            height: 200%;
+            z-index: -1;
+            width: 28%;
+            bottom: 25%;
+    }
+
+    .branch-eight {
+        background-image: url(../img/branch-eight.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: bottom left;
+            position: absolute;
+            left: -8%;
+            height: 10%;
+            z-index: -1;
+            width: 40%;
+            bottom: 50%;
+    }
+
     }
