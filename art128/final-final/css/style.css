@@ -37,10 +37,53 @@ body {
     line-height: 1.5;
     background-color: rgba( 12, 12, 12, 1);
     color: rgba(255, 255, 255, .8);
-    background-image: url(../img/nightbackgroundvectorfront.gif), url(../img/nightbackgroundvectorback.gif);
+    /* background-image: url(../img/nightbackgroundvectorfront.gif), url(../img/nightbackgroundvectorback.gif);
     background-repeat: no-repeat;
     background-position: top, top;
+    background-size: contain; */
+}
+
+@keyframes stars {
+   from {
+       transform: translateY(-20px)
+   }
+}
+  
+
+.background-stars {
+    position: absolute;
+    position: top;
+    background-repeat: no-repeat;
     background-size: contain;
+    animation: stars 4s ease;
+    animation-fill-mode: forwards;
+}
+
+.background-front {
+    position: absolute;
+    position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 1;
+}
+
+@keyframes sunset {
+    to {
+        transform: translateY(-30px);
+    }
+  
+   
+}
+
+.background-back {
+    position: absolute;
+    position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
+    animation: sunset 4s ease;
+    animation-fill-mode: forwards;
+    
 }
 
 /*  HEADINGS */
@@ -353,8 +396,8 @@ i {
 }
 
 .site-id h1, button {
-    animation: translate 2.5s ease;
-    animation-delay: 1s;
+    animation: translate 3s ease;
+    animation-delay: 3s;
     animation-fill-mode: forwards;
 }
 
@@ -420,7 +463,8 @@ li {
 
 
 .star {
-    padding: 2em
+    padding: 2em;
+    
 }
 
   .star div {
@@ -431,6 +475,7 @@ li {
       border: 1px solid transparent;
       border-radius: 50%;
       transition: 500ms ease;
+      opacity: 1;
   }
 
   .star:hover div {
@@ -448,33 +493,32 @@ li {
   .star:hover span {
         display: block;
         font-size: 8px;
-        : le-monde-livre-std, serif;
         font-weight: 300;
         font-style: normal;
       }
 
   .star .star-about {
-      animation-delay: 0;
+      animation-delay: 3.5s;
   }
 
   .star .star-performance {
-    animation-delay: 3s;
+    animation-delay: 6.5s;
     }
 
 .star .star-media {
-   animation-delay: 5s;
+   animation-delay: 8.5s;
    }
 
 .star .star-merch {
-    animation-delay: 1s;
+    animation-delay: 4.5s;
  }
 
 .star .star-blog {
-    animation-delay: 2s;
+    animation-delay: 5.5s;
 }
 
 .star .star-social {
-    animation-delay: 4s;
+    animation-delay: 7.5s;
  }
 
 
@@ -525,17 +569,12 @@ section {
 
 @keyframes transform {
     from {
-        transform: translateY(-80px);
+        transform: translateY(140px);
     }
     to {
         transform: translateY(-150px);
     }
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 100%;
-    }
+    
     
 }
 
@@ -545,20 +584,14 @@ section {
     font-family: playfair-display,serif;
     font-weight: 400;
     font-style: normal;
-    animation: transform 2.5s ease;
+    animation: transform 4s ease-in-out;
     animation-fill-mode: forwards;
     font-size: 3em;
-}
-
-
-
-.hero h1, .hero p {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1000px;
-    text-align: center;
+    z-index: 0;
     color: rgb(204, 204, 204);
+
 }
+
 
 
 
@@ -906,11 +939,13 @@ section[data-sectionstate="active"] .branch-six {
 
 section[data-sectionstate="active"] .branch-seven {
     transform: translateY(-2em);
+    transition: 10s ease;
     }
 
 section[data-sectionstate="active"] .branch-eight {
     transform: translateY(-.5em);
     }
+
 
 
 /* BRANCH STYLING FOR MEDIUM SCREENS */
@@ -1036,7 +1071,7 @@ section[data-sectionstate="active"] .branch-eight {
     
     #star-performance {
         position: absolute;
-        top: 400%;
+        top: 500%;
         left: 10%;
     }
     
@@ -1262,13 +1297,26 @@ section[data-sectionstate="active"] .branch-eight {
 
         .hero {
             padding-bottom: 5em;
-            padding-top: 17em;
+            padding-top: 11em;
+        }
+
+        @keyframes header-mobile {
+            to {
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+            }
         }
 
         .hero h1 {
             margin: auto;
             font-size: 2em;
             padding-top: 2em;
+            z-index: auto;
+            animation: header-mobile 4s ease;
+            opacity: 0;
+            animation-fill-mode: forwards;
         }
         .site-header h1 {
             max-width: 50%;
@@ -1399,3 +1447,177 @@ section[data-sectionstate="active"] .branch-eight {
     }
 
     }
+
+    /* BRANCH STYLING FOR LARGE SCREENS */
+
+@media (min-width:1250px) {
+
+    .background-front {
+        width: 150%;
+    }
+
+    .background-back {
+        width: 150%;
+    }
+
+    .background-stars {
+        width: 150%;
+    }
+
+    .hero {
+        padding-top: 20em;
+    }
+
+    #about {
+        padding-top: 40em;
+    }
+
+  
+    .branch-one {
+        background-image: url(../img/branch-one.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: left;
+        position: absolute;
+        top: 40%;
+        left: -25%;
+        width: 50%;
+        height: 30%;
+        z-index: -1;
+       
+    }
+
+    .branch-two {
+        background-image: url(../img/branch-two.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right;
+        position: absolute;
+        bottom: -15%;
+        right: 0;
+        width: 65%;
+        height: 50%;
+        max-width: 1500px;
+        z-index: -1;
+    }
+
+    .branch-three {
+        background-image: url(../img/branch-three.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: left top;
+        position: absolute;
+        top: 35%;
+        left: 0;
+        width: 65%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    .branch-four {
+        background-image: url(../img/branch-four.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        position: absolute;
+        right: 0;
+        bottom: -50%;
+        width: 25%;
+        height: 95%;
+        z-index: -1;
+        margin: auto;
+    }
+
+    .branch-five {
+        background-image: url(../img/branch-five.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top left;
+        position: absolute;
+        left: 0;
+        bottom: 55%;
+        width: 40%;
+        height: 60%;
+        z-index: -1;
+    }
+
+    .branch-six {
+        background-image: url(../img/branch-six.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right center;
+        position: absolute;
+        right: 0;
+        top: 20%;
+        width: 80%;
+        height: 120%;
+        z-index: -1;
+    }
+
+    .branch-seven {
+        background-image: url(../img/branch-seven.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        position: absolute;
+        right: 0;
+        bottom: 10%;
+        width: 45%;
+        height: 155%;
+        z-index: -1;
+    }
+
+    .branch-eight {
+        background-image: url(../img/branch-eight.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        position: absolute;
+        left: 0;
+        bottom: 38%;
+        width: 48%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    h1.date {
+        font-size: 6em;
+        margin-top: 2.5em;
+    }
+
+    #star-about {
+        position: absolute;
+        top: 200%;
+        left: 20%;
+    }
+    
+    #star-performance {
+        position: absolute;
+        top: 500%;
+        left: 10%;
+    }
+    
+    #star-media {
+        position: absolute;
+        top: 550%;
+        left: 35%;
+    }
+    
+    #star-merch {
+        position: absolute;
+        top: 500%;
+        left: 70%;
+    }
+    
+    #star-blog {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+    }
+    
+    #star-social {
+        position: absolute;
+        top: 200%;
+        left: 80%;
+    }
+}
