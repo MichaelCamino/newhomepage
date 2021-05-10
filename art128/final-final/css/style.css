@@ -1313,11 +1313,15 @@ section[data-sectionstate="active"] .branch-eight {
             margin: auto;
             font-size: 2em;
             padding-top: 2em;
-            z-index: auto;
+            z-index: 1;
             animation: header-mobile 4s ease;
             opacity: 0;
             animation-fill-mode: forwards;
+            
         }
+
+      
+
         .site-header h1 {
             max-width: 50%;
         }
@@ -1339,7 +1343,7 @@ section[data-sectionstate="active"] .branch-eight {
             text-align: right;
             margin-right: .3em;
         }
-       
+        
         .branch-one {
             background-image: url(../img/branch-one1.png);
             background-size: contain;
