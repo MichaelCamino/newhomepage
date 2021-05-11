@@ -68,8 +68,8 @@ body {
 }
 
 @keyframes sunset {
-    to {
-        transform: translateY(-30px);
+    from {
+        transform: translateY(-100px);
     }
   
    
@@ -391,7 +391,7 @@ i {
         opacity: 0;
     }
     to {
-        opacity: 80%;
+        opacity: 90%;
     }
 }
 
@@ -1263,7 +1263,22 @@ section[data-sectionstate="active"] .branch-eight {
 /* STYLING FOR MOBILE */
 
     @media (max-width:767px) {
+
+        @keyframes glow-mobile {
+            from {
+                transform: translateY(-40px);
+            }
+        }
+
+        .background-back {
+            animation: glow-mobile 5s ease;
+        }
     
+        .star div {
+            height: 2px;
+            width: 2px;
+        }
+
         #star-about {
             position: absolute;
             top: 150%;
@@ -1296,7 +1311,7 @@ section[data-sectionstate="active"] .branch-eight {
         }
 
         .hero {
-            padding-bottom: 5em;
+            padding-bottom: 15em;
             padding-top: 11em;
         }
 
@@ -1625,3 +1640,4 @@ section[data-sectionstate="active"] .branch-eight {
         left: 80%;
     }
 }
+
