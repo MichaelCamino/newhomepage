@@ -1360,8 +1360,9 @@ section[data-sectionstate="active"] .branch-eight {
           max-width: 50%;
           opacity: .8;
           animation: archer-mobile 3s ease;
-          animation-delay: .5s;
+          animation-delay: 1s;
           animation-fill-mode: backwards;
+      }
 
         .site-header h1 {
             max-width: 50%;
