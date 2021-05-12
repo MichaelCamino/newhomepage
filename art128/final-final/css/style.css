@@ -1355,9 +1355,9 @@ section[data-sectionstate="active"] .branch-eight {
       .archer {
           display: block;
           position: absolute;
-          top: -35%;
-          left: 25%;
-          max-width: 50%;
+          top: -32%;
+          left: 20%;
+          max-width: 60%;
           opacity: .8;
           animation: archer-mobile 3s ease;
           animation-delay: 1s;
