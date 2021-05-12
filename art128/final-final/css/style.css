@@ -1345,7 +1345,7 @@ section[data-sectionstate="active"] .branch-eight {
 
         @keyframes archer-mobile {
             from {
-                transform: translateY(-20px);
+                transform: translateY(20px);
             }
             from {
                 opacity: 0;
@@ -1355,12 +1355,13 @@ section[data-sectionstate="active"] .branch-eight {
       .archer {
           display: block;
           position: absolute;
-          top: -30%;
-          left: 8%;
-          max-width: 80%;
+          top: -35%;
+          left: 25%;
+          max-width: 50%;
           opacity: .8;
           animation: archer-mobile 3s ease;
-      }
+          animation-delay: .5s;
+          animation-fill-mode: backwards;
 
         .site-header h1 {
             max-width: 50%;
