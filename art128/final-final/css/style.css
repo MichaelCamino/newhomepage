@@ -82,7 +82,7 @@ body {
 
 @keyframes treesanimation2 {
     from {
-        transform: translateY(2em);
+        transform: translateY(3em);
     }
 }
 
@@ -995,6 +995,10 @@ section[data-sectionstate="active"] .branch-eight {
             display: none;
         }
 
+    .hero {
+        padding-top: 20em;
+    }
+
     .branch-one {
         background-image: url(../img/branch-one.png);
         background-size: contain;
@@ -1120,8 +1124,8 @@ section[data-sectionstate="active"] .branch-eight {
     
     #star-media {
         position: absolute;
-        top: 450%;
-        left: 35%;
+        top: 550%;
+        left: 44%;
     }
     
     #star-merch {
@@ -1717,7 +1721,7 @@ section[data-sectionstate="active"] .branch-eight {
     
     #star-merch {
         position: absolute;
-        top: 620%;
+        top: 580%;
         left: 70%;
     }
     
