@@ -37,10 +37,8 @@ body {
     line-height: 1.5;
     background-color: rgba( 12, 12, 12, 1);
     color: rgba(255, 255, 255, .8);
-    /* background-image: url(../img/nightbackgroundvectorfront.gif), url(../img/nightbackgroundvectorback.gif);
-    background-repeat: no-repeat;
-    background-position: top, top;
-    background-size: contain; */
+    background-image: linear-gradient(to bottom, rgba(12,12,12,1) 80em, rgb(45,45,45,1), rgba(12,12,12,1));
+    background-position: bottom;
 }
 
 @keyframes stars {
@@ -57,15 +55,45 @@ body {
     background-size: contain;
     animation: stars 4s ease;
     animation-fill-mode: forwards;
-    z-index: 0;
+    z-index: -3;
 }
 
 .background-front {
     position: absolute;
-    position: top;
     background-repeat: no-repeat;
     background-size: contain;
-    z-index: 1;
+    z-index: 0;
+}
+
+@keyframes treesanimation {
+    from {
+        transform: translateY(1em);
+    }
+}
+
+.background-middle-1 {
+    position: absolute;
+    top: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
+    animation: treesanimation 3s ease;
+}
+
+@keyframes treesanimation2 {
+    from {
+        transform: translateY(2em);
+    }
+}
+
+.background-middle-2 {
+    position: absolute;
+    top: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -2;
+    animation: treesanimation2 3s ease;
+    animation-fill-mode: backwards;
 }
 
 @keyframes sunset {
@@ -81,11 +109,13 @@ body {
     position: top;
     background-repeat: no-repeat;
     background-size: contain;
-    z-index: -1;
+    z-index: -4;
     animation: sunset 4s ease;
     animation-fill-mode: forwards;
     
 }
+
+
 
 /*  HEADINGS */
 /*  
@@ -378,7 +408,8 @@ audio {
 }
 
 i {
-    opacity: .9;
+    opacity: 1;
+    color: rgb(179, 179, 179);
 }
 
 /*  LOGO AREA */
@@ -392,14 +423,15 @@ i {
         opacity: 0;
     }
     to {
-        opacity: 90%;
+        opacity: 1;
     }
 }
 
 .site-id h1, button {
-    animation: translate 3s ease;
+    animation: translate 2s ease;
     animation-delay: 3s;
     animation-fill-mode: forwards;
+    
 }
 
 .site-id h1 {
@@ -411,7 +443,6 @@ i {
 }
 
 .site-id h1 img {
-    /* background: red; */
     width: 100px;
     margin-top: .8em;
 }
@@ -565,15 +596,21 @@ section {
     text-align: center;
     margin-bottom: 1em;
     margin-top: 0;
-
+    position: relative;
 }
 
 @keyframes transform {
     from {
-        transform: translateY(140px);
+        transform: translateY(-70px);
     }
     to {
         transform: translateY(-150px);
+    }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
     
     
@@ -585,13 +622,14 @@ section {
     font-family: playfair-display,serif;
     font-weight: 400;
     font-style: normal;
-    animation: transform 4s ease-in-out;
+    animation: transform 1.5s ease-in-out;
     animation-fill-mode: forwards;
     font-size: 3em;
-    z-index: -2;
     color: rgb(204, 204, 204);
-
+    animation-delay: 2s;
+    opacity: 0;
 }
+  
 
 
 
@@ -872,7 +910,7 @@ form input[type=submit]:hover {
 /*  BRANCH SCROLL ANIMATION */
 
 .branch {
-    opacity: .8;
+    opacity: 1;
     transition: 4s ease-out;
 }
 
@@ -1275,21 +1313,21 @@ section[data-sectionstate="active"] .branch-eight {
 
         @keyframes glow-mobile {
             from {
-                transform: translateY(-40px);
+                transform: translateY(-20px);
             }
         }
 
-        .background-front {
-            z-index: 0;
+        /* .background-front {
+            z-index: 1;
         }
 
         .background-stars {
-            z-index: -1;
-        }
+            z-index: 0;
+        } */
 
         .background-back {
             animation: glow-mobile 5s ease;
-            z-index: -2;
+            /* z-index: -1; */
         }
 
 
@@ -1357,7 +1395,7 @@ section[data-sectionstate="active"] .branch-eight {
 
         @keyframes archer-mobile {
             from {
-                transform: translateY(20px);
+                transform: translateY(-15px);
             }
             from {
                 opacity: 0;
@@ -1367,12 +1405,12 @@ section[data-sectionstate="active"] .branch-eight {
       .archer {
           display: block;
           position: absolute;
-          top: -32%;
+          top: 58%;
           left: 20%;
           max-width: 60%;
           opacity: .8;
           animation: archer-mobile 3s ease;
-          animation-delay: 1s;
+          animation-delay: .5s;
           animation-fill-mode: backwards;
       }
 
@@ -1524,6 +1562,20 @@ section[data-sectionstate="active"] .branch-eight {
         width: 150%;
     }
 
+    .background-front {
+        width: 150%;
+    }
+
+    .background-middle-1 {
+        width: 150%;
+    }
+
+    .background-middle-2 {
+        width: 150%;
+    }
+
+
+
     .hero {
         padding-top: 20em;
         padding-bottom: 40em;
@@ -1538,10 +1590,9 @@ section[data-sectionstate="active"] .branch-eight {
         background-image: url(../img/branch-one.png);
         background-size: contain;
         background-repeat: no-repeat;
-        background-position: left;
         position: absolute;
         top: 2%;
-        left: -25%;
+        left: -30%;
         width: 50%;
         height: 30%;
         z-index: -1;
@@ -1568,7 +1619,7 @@ section[data-sectionstate="active"] .branch-eight {
         background-repeat: no-repeat;
         background-position: left top;
         position: absolute;
-        top: 35%;
+        top: 40%;
         left: 0;
         width: 65%;
         height: 100%;
@@ -1582,9 +1633,9 @@ section[data-sectionstate="active"] .branch-eight {
         background-position: right bottom;
         position: absolute;
         right: 0;
-        bottom: -50%;
-        width: 25%;
-        height: 95%;
+        bottom: -26%;
+        width: 15%;
+        height: 70%;
         z-index: -1;
         margin: auto;
     }

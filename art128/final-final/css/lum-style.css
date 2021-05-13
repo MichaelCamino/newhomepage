@@ -174,7 +174,7 @@ html {
     -webkit-text-fill-color: transparent;
 }
 
-@keyframes animStar {
+ animStar {
     from {
         transform: translateY(0px);
     }
