@@ -57,6 +57,7 @@ body {
     background-size: contain;
     animation: stars 4s ease;
     animation-fill-mode: forwards;
+    z-index: 0;
 }
 
 .background-front {
@@ -587,7 +588,7 @@ section {
     animation: transform 4s ease-in-out;
     animation-fill-mode: forwards;
     font-size: 3em;
-    z-index: 0;
+    z-index: -2;
     color: rgb(204, 204, 204);
 
 }
@@ -1278,9 +1279,20 @@ section[data-sectionstate="active"] .branch-eight {
             }
         }
 
+        .background-front {
+            z-index: 0;
+        }
+
+        .background-stars {
+            z-index: -1;
+        }
+
         .background-back {
             animation: glow-mobile 5s ease;
+            z-index: -2;
         }
+
+
     
         .star div {
             height: 2px;
@@ -1371,7 +1383,9 @@ section[data-sectionstate="active"] .branch-eight {
         button {
             font-size: .5em;
             margin-top: 1.5em;
+            
         }
+        
     
         .star:hover span {
             display: none;
@@ -1498,7 +1512,7 @@ section[data-sectionstate="active"] .branch-eight {
 
 @media (min-width:1250px) {
 
-    .background-front {
+    ground-front {
         width: 150%;
     }
 
