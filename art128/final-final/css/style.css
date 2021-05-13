@@ -429,7 +429,7 @@ i {
 
 .site-id h1, button {
     animation: translate 2s ease;
-    animation-delay: 3s;
+    animation-delay: 3.2s;
     animation-fill-mode: forwards;
     
 }
@@ -622,7 +622,7 @@ section {
     font-family: playfair-display,serif;
     font-weight: 400;
     font-style: normal;
-    animation: transform 1.5s ease-in-out;
+    animation: transform 1.8s ease-in-out;
     animation-fill-mode: forwards;
     font-size: 3em;
     color: rgb(204, 204, 204);
