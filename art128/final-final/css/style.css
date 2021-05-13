@@ -570,13 +570,17 @@ li {
 
 
 
-.hero-bottom  {
+h1.hero-bottom  {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: -15px;
     opacity: .8;
+    transition: 300ms ease;
 }
 
+h1.hero-bottom:hover {
+    transform: scale(.98);
+}
 
 .site-footer a {
     margin-top: 0em;
@@ -636,7 +640,6 @@ section {
     opacity: 0;
 }
   
-
 
 
 
